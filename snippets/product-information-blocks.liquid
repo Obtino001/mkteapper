@@ -488,6 +488,7 @@
             {% render 'product-grid-icon-box', block: block %}
           </div>
         {%- when 'timer' -%}
+          {%- if product.tags contains 'sale' -%}
           {%- capture rgb -%}
             {{ block.settings.text_color.red }},{{ block.settings.text_color.green }},{{ block.settings.text_color.blue }}
           {%- endcapture -%}
@@ -514,6 +515,7 @@
               -%}
             {%- endif -%}
           </div>
+          {%- endif -%}
         {%- when 'newsletter' -%}
           <div class="{{ block_classes }} flex flex-col gap-5" {{ block.shopify_attributes }}>
             <h2 class="{{ block.settings.heading_size }}">{{ block.settings.heading }}</h2>

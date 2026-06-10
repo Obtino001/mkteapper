@@ -126,6 +126,7 @@
       name="{{ input_name }}"
       value="{{ value | escape }}"
       form="{{ product_form_id }}"
+      style="{% if option_disabled %}order: 2; opacity: 0.5;{% else %}order: 1;{% endif %}"
       {% if value.selected %}
         checked
       {% endif %}
@@ -138,6 +139,7 @@
       for="{{ input_id }}"
       class="block relative"
       data-swatch-type="{{ block.settings.swatch_type }}"
+      style="{% if option_disabled %}order: 2; opacity: 0.5;{% else %}order: 1;{% endif %}"
       data-tooltip
     >
       <span class="tooltip pointer-events-none">{{ value | escape }}</span>
@@ -150,6 +152,7 @@
       name="{{ input_name | escape }}"
       value="{{ value | escape }}"
       form="{{ product_form_id }}"
+      style="{% if option_disabled %}order: 2; opacity: 0.5;{% else %}order: 1;{% endif %}"
       {% if value.selected %}
         checked
       {% endif %}
@@ -158,7 +161,7 @@
       {% endif %}
       {{ input_dataset }}
     >
-    <label for="{{ input_id }}">
+    <label for="{{ input_id }}" style="{% if option_disabled %}order: 2; opacity: 0.5;{% else %}order: 1;{% endif %}">
       {{ value -}}
       {{ label_unavailable }}
     </label>

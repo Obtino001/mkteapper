@@ -138,27 +138,27 @@
       "type": "@app"
     },
     {
-  "type": "custom-trustpilot",
-  "name": "Custom Trustpilot",
-  "settings": [
-    {
-      "type": "image_picker",
-      "id": "trust_image",
-      "label": "Trustpilot Image"
+      "type": "custom-trustpilot",
+      "name": "Custom Trustpilot",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "trust_image",
+          "label": "Trustpilot Image"
+        },
+        {
+          "type": "richtext",
+          "id": "trust_text",
+          "label": "Trustpilot Text",
+          "default": "<p>4,5 stjerner | Baseret p\u00e5 +110 anmeldelser</p>"
+        },
+        {
+          "type": "url",
+          "id": "trust_link",
+          "label": "Link"
+        }
+      ]
     },
-    {
-      "type": "richtext",
-      "id": "trust_text",
-      "label": "Trustpilot Text",
-      "default": "<p>4,5 stjerner | Baseret på +110 anmeldelser</p>"
-    },
-    {
-      "type": "url",
-      "id": "trust_link",
-      "label": "Link"
-    }
-  ]
-},
     {
       "type": "text",
       "name": "t:sections.main-product.blocks.text.name",
@@ -293,11 +293,11 @@
       "name": "t:sections.main-product.blocks.inventory.name",
       "limit": 1,
       "settings": [
-{
+        {
           "type": "text",
           "id": "inventory-text",
           "label": "Inventory text",
-           "default": "På lager. Klar til afsendelse"
+          "default": "P\u00e5 lager. Klar til afsendelse"
         },
         {
           "type": "select",
@@ -1752,7 +1752,7 @@
           "type": "richtext",
           "id": "description",
           "label": "t:general.text.label",
-          "default": "<p>Don’t miss out on this limited-time advantage crafted for you</p>"
+          "default": "<p>Don\u2019t miss out on this limited-time advantage crafted for you</p>"
         }
       ]
     },

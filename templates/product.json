@@ -1,1 +1,569 @@
-{"sections":{"breadcrumbs":{"type":"breadcrumbs","custom_css":["@media (min-width: 1280px) {.breadcrumbs {padding-inline: 5rem; }}"],"settings":{"container":"fixed","text_alignment":"start","padding_top":16,"padding_bottom":20}},"main":{"type":"main-product","blocks":{"custom_trustpilot_XfydpY":{"type":"custom-trustpilot","settings":{"trust_image":"shopify:\/\/shop_images\/t-stars.svg","trust_text":"<p>4,4 stjerner | Baseret på +588 anmeldelser<\/p>","trust_link":"https:\/\/dk.trustpilot.com\/review\/mktaepper.dk?utm_medium=trustbox&utm_source=MicroReviewCount"}},"title":{"type":"title","settings":{"heading_size":"h2"}},"meta":{"type":"meta","disabled":true,"settings":{"link_color":"#1d349a","show_vendor":true,"show_product_type":true,"show_sku":false,"show_barcode":false}},"price":{"type":"price","settings":{}},"icon_with_text":{"type":"icon-with-text","settings":{"layout":"horizontal","title_font":"body-bolder","title_size":"text-base","icon_1":"check","heading_1":"Gratis levering","icon_2":"check","heading_2":"Øko-certificeret","icon_3":"check","heading_3":"Fysisk showroom"}},"klarna_on_site_messaging_app_block_fzhTDC":{"type":"shopify:\/\/apps\/klarna-on-site-messaging\/blocks\/app-block\/b95936a9-74b6-4a95-8103-6a1b6459c25e","settings":{"data_key":"credit-promotion-badge","theme":"default","topPadding":"0","bottomPadding":"0","messagePrefix":""}},"inventory":{"type":"inventory","settings":{"inventory-text":"På lager. Klar til afsendelse","text_style":"body","inventory_threshold":0,"show_inventory_quantity":false}},"variant_picker":{"type":"variant_picker","settings":{"picker_type":"button","swatch_type":"shopify_swatch","swatch_style":"square","swatch_size":32,"button_style":"normal","size_title":"Size","size_chart_from_page":""}},"buy_buttons":{"type":"buy_buttons","settings":{"show_quantity_selector":false,"show_dynamic_checkout":false,"show_gift_card_recipient":true}},"payment_info":{"type":"payment_info","settings":{"color_scheme":"scheme-1","heading":"","highlight_style":"none","highlight_font_style":"italic","highlight_style_color":"","highlight_text_color":"","heading_size":"h5","description":"","show_payment_icons":true,"show_below_product_media":false}},"icon_with_text_UAYgQU":{"type":"icon-with-text","settings":{"layout":"vertical","title_font":"body","title_size":"text-base","icon_1":"car-simple","heading_1":"Gratis og hurtig levering til hjemmet","icon_2":"arrow-up-left","heading_2":"Over <strong>10.000<\/strong> glade kunder","icon_3":"smiley","heading_3":"Telefon<strong>:<\/strong> <strong>50 34 50 23<\/strong>"}},"pickup_availability":{"type":"pickup_availability","settings":{}},"promotion_alert_L7ipQp":{"type":"promotion_alert","disabled":true,"settings":{"text_color":"#049b6e","icon":"lightning","heading":"Tidsbegrænset tilbud","description":"<p>Få 20 USD i rabat, når du bruger 1.000 USD eller mere! <a href=\"\/collections\/all\" title=\"All products\">Læs mere<\/a><\/p>"}},"complementary":{"type":"complementary","settings":{"block_heading":"Perfect Match With","heading_size":"h4","show_below_product_media":true,"make_collapsible_row":false,"icon":"tag","product_list_limit":6,"layout":"horizontal-list","columns":3,"image_ratio":"1\/1","enable_quick_add":true}},"collapsible-row-1":{"type":"collapsible_tab","settings":{"heading":"Beskrivelse","heading_size":"h4","icon":"none","content":"{{ product.description }}","page":"content","default_open":false,"show_below_product_media":true}},"collapsible-row-2":{"type":"collapsible_tab","settings":{"heading":"Levering & Returnering","heading_size":"h4","icon":"none","content":"<h5>🚚 Levering<\/h5><h6><strong>Gratis levering til døren<\/strong><\/h6><ul><li>Gratis levering til døren på alle løse tæpper og boligtilbehør i Danmark<br\/><\/li><li>Gratis levering til døren ved køb over <strong>999 kr.<\/strong> til Sverige<br\/><\/li><\/ul><p><strong>Levering til kantsten<\/strong><\/p><ul><li>Gælder for laminat, vinylgulv og væg-til-væg tæpper<br\/><\/li><li>Pris fra <strong>599 kr.<\/strong><br\/><\/li><\/ul><h6><strong>Leveringsinformation<\/strong><\/h6><ul><li>Pakker leveres med <strong>GLS<\/strong> på hverdage mellem ca. kl. <strong>08–16<\/strong><br\/><\/li><li>Alle leveringer sker i samarbejde med <strong>GLS eller Danske Fragtmænd<\/strong><br\/><\/li><li>Er du ikke hjemme ved levering, bliver pakken automatisk afleveret i en <strong>GLS PakkeShop<\/strong> nær dig (maks. 20 kg)<br\/><\/li><\/ul><h5>🔄 Returnering<\/h5><h6><strong>Returret<\/strong><\/h6><ul><li>Du har <strong>14 dages returret<\/strong> på løse tæpper og boligtilbehør<br\/><\/li><li>Kunden betaler selv for returnering<br\/><\/li><\/ul><h6><strong>Pris for returnering<\/strong><\/h6><ul><li>Pris fra <strong>150 kr. i Danmark<\/strong><br\/><\/li><li>Prisen afhænger af varens størrelse og vægt<br\/><\/li><\/ul><h6><strong>Sådan returnerer du<\/strong><\/h6><ul><li>Kontakt os på <a><strong>info@mktaepper.dk<\/strong><\/a> for at anmode om returnering<br\/><\/li><li>Vi sender dig et <strong>returlabel\/link<\/strong><br\/><\/li><li>Returnering skal ske via <strong>GLS<\/strong><br\/><\/li><li>Retur til PakkeShop: maks. <strong>20 kg<\/strong><br\/><\/li><li>Afhentning på adresse er muligt mod <strong>ekstra tillæg<\/strong><\/li><\/ul><h6><strong>Undtagelser<\/strong><\/h6><p>Der er <strong>ingen returret<\/strong> på rullevarer som <strong>vinylgulv og væg-til-væg tæpper<\/strong>, da disse skæres efter kundens specifikke mål<strong>.<\/strong><\/p>","page":"","default_open":false,"show_below_product_media":true}},"collapsible-row-3":{"type":"collapsible_tab","settings":{"heading":"Kundeservice","heading_size":"h4","icon":"none","content":"<h5>📞 Kontakt os<\/h5><h6><strong>Kontaktoplysninger<\/strong><\/h6><ul><li><strong>E-mail:<\/strong> <a>info@mktaepper.dk<\/a><br\/><\/li><li><strong>Telefon:<\/strong> 50 34 50 23<br\/><\/li><\/ul><p>Vi står altid klar til at hjælpe dig i vores åbningstid – uanset om du har brug for råd og vejledning om vores produkter, hjælp til bestilling eller spørgsmål om returnering. Tøv endelig ikke med at kontakte os.<\/p><p><strong>Træffetider<\/strong><\/p><ul><li><strong>Mandag–fredag:<\/strong> kl. <strong>10.00–17.00<\/strong><\/li><\/ul>","page":"","default_open":false,"show_below_product_media":true}},"divider_pPz3Kw":{"type":"divider","disabled":true,"settings":{"show_below_product_media":false}},"social_sharing":{"type":"social_sharing","disabled":true,"settings":{}},"sticky_atc_bar_7HgNgP":{"type":"sticky-atc-bar","settings":{"visibility":"all","style":"minimalist","container":"full","show_atc_button":true,"show_dynamic_checkout_buttons":false,"show_quantity":true}}},"block_order":["custom_trustpilot_XfydpY","title","meta","price","icon_with_text","klarna_on_site_messaging_app_block_fzhTDC","inventory","variant_picker","buy_buttons","payment_info","icon_with_text_UAYgQU","pickup_availability","promotion_alert_L7ipQp","complementary","collapsible-row-1","collapsible-row-2","collapsible-row-3","divider_pPz3Kw","social_sharing","sticky_atc_bar_7HgNgP"],"custom_css":["@media (min-width: 1280px) {.product {padding-inline: 5rem; }}"],"settings":{"color_scheme":"scheme-1","use_color_scheme_in_container":false,"enable_sticky_info":true,"media_size":"large","gallery_layout":"columns","mobile_thumbnails":"show","show_image_border":false,"enable_image_zoom":true,"enable_video_looping":true,"padding_top":0,"padding_bottom":60}},"image_with_text_ndXRmK":{"type":"image-with-text","blocks":{"badge_X4ygyR":{"type":"badge","settings":{"color_scheme":"scheme-13","text":"","image":"shopify:\/\/shop_images\/Asset_27_11zon_155a02fe-dc68-4123-96ec-859e302ae37d_1.png","position_mobile":"right"}},"heading_cJmpJA":{"type":"heading","settings":{"heading":"MK Tæpper Showroom","highlight_style":"none","highlight_font_style":"italic","highlight_style_color":"","highlight_text_color":"","heading_size":"h3"}},"text_Qd7twE":{"type":"text","settings":{"text":"<p><strong>Adresse: <\/strong>Østre Alle 36, 4200 Slagelse<\/p><p><strong>Åbningstider:<br\/><\/strong>Mandag - Torsdag: kl.10-17<br\/>Fredag: kl.10-17.30<br\/>Lørdag: kl.10-15<br\/>Søndag: Lukket<\/p><p><strong>Åbningstider mellem jul & nytår 2025\/2026<\/strong><\/p><p>Lukket fra d. 24\/12 til og med d. 28\/12.<\/p><p>Lukket d. 1\/1-2026<\/p>","subtext_color":true}},"icon_with_text_egakxw":{"type":"icon_with_text","disabled":true,"settings":{"icon":"map-pin","icon_width":24,"color":"#000000","heading":"Produkt lokalt i Danmark","heading_size":"h5","text":"","vertical_alignment":"start"}},"icon_with_text_zzgnn9":{"type":"icon_with_text","settings":{"icon":"smiley","icon_width":24,"color":"#000000","heading":"Over 10000+ glade kunder","heading_size":"h5","text":"","vertical_alignment":"start"}},"icon_with_text_e9gpp3":{"type":"icon_with_text","settings":{"icon":"stool","icon_width":24,"color":"#000000","heading":"Gratis levering til døren","heading_size":"h5","text":"","vertical_alignment":"start"}},"button_Wwp6AC":{"type":"button","settings":{"button_label":"Vis vej","button_link":"https:\/\/maps.google.com\/?daddr=Østre%20Alle%2036,%204200%20Slagelse","button_style":"btn--primary","button_icon":"none"}}},"block_order":["badge_X4ygyR","heading_cJmpJA","text_Qd7twE","icon_with_text_egakxw","icon_with_text_zzgnn9","icon_with_text_e9gpp3","button_Wwp6AC"],"custom_css":[".image-with-text__content {max-width: 45rem; --text-margin-top: 2rem;}","@media (min-width: 1280px) {.image-with-text__media {padding-inline-start: 5rem; }}"],"settings":{"container":"fixed","color_scheme":"","media_type":"video","image":"shopify:\/\/shop_images\/60B76632-6F60-4550-9F11-1A3D14241ED6_092ff8aa-4a5e-4a6a-8b26-9af66cf28e29.jpg","video_url":"","video_alt":"","video_autoplay":true,"video_muted":true,"video_loop":true,"video_controls":false,"image_position":"left","image_width":50,"desktop_content_position":"center","desktop_content_alignment":"left","mobile_content_alignment":"inherit","show_section_divider":false,"divider_width":"fixed","padding_top":60,"padding_bottom":60}},"image_with_text_kqXfRQ":{"type":"image-with-text","blocks":{"heading_ngPQi3":{"type":"heading","settings":{"heading":"MK Tæpper Showroom","highlight_style":"none","highlight_font_style":"italic","highlight_style_color":"","highlight_text_color":"","heading_size":"h1"}},"text_nF69XB":{"type":"text","settings":{"text":"<p>Besøg vores showroom og oplev en del af vores store tæppeudvalg, samt få professionel vejledning ift. valg af dit nye tæppe!<\/p><p><strong>Adresse: <\/strong>Østre Alle 36, 4200 Slagelse<\/p><p><strong>Åbningstider:<br\/><\/strong>Mandag - Torsdag: kl.10-17<br\/>Fredag: kl.10-17.30<br\/>Lørdag: kl.10-15<br\/>Søndag: Lukket<\/p><p><strong>Åbningstider mellem jul & nytår 2025\/2026<\/strong><\/p><p>Lukket fra d. 24\/12 til og med d. 28\/12.<\/p><p>Lukket d. 1\/1-2026<\/p>","subtext_color":true}},"button_fQzFTq":{"type":"button","settings":{"button_label":"find vej","button_link":"https:\/\/www.google.com\/maps\/dir\/\/%C3%98stre+Alle+36,+4200+Slagelse,+Denmark\/@30.1556177,71.7121633,15z\/data=!4m8!4m7!1m0!1m5!1m1!1s0x464d63d4d86f1b4f:0xcc4ca2f7dc45e1a6!2m2!1d11.3684725!2d55.4099965?entry=ttu&g_ep=EgoyMDI2MDIwMy4wIKXMDSoASAFQAw%3D%3D","button_style":"btn--primary","button_icon":"none"}}},"block_order":["heading_ngPQi3","text_nF69XB","button_fQzFTq"],"disabled":true,"custom_css":["@media (min-width: 1024px) {.image-with-text__wrapper {padding-inline: 5rem; } .image-with-text__content {--text-margin-top: 2rem; }}",".image-with-text__content {max-width: 52rem;}"],"settings":{"container":"fixed","color_scheme":"scheme-13","media_type":"video","image":"shopify:\/\/shop_images\/2_504bb267-b44f-4cda-8c46-81eadeb58f10.jpg","video_url":"","video_alt":"","video_autoplay":true,"video_muted":true,"video_loop":true,"video_controls":false,"image_position":"right","image_width":50,"desktop_content_position":"center","desktop_content_alignment":"left","mobile_content_alignment":"inherit","show_section_divider":false,"divider_width":"fixed","padding_top":60,"padding_bottom":60}},"related-products":{"type":"related-products","settings":{"container":"fixed","color_scheme":"scheme-1","section_header_alignment":"left","section_header_alignment_mobile":"inherit","subheading":"","heading":"Du vil måske syntes om?","highlight_style":"none","highlight_font_style":"italic","highlight_style_color":"","highlight_text_color":"","heading_size":"h2","description":"","limit":6,"columns":5,"column_gap":"medium","row_gap":"inherit","enable_slider":true,"navigation_position":"bottom","pcard_image_ratio":"","columns_mobile":"2","swipe_on_mobile":true,"show_progress_bar":true,"padding_top":60,"padding_bottom":50,"show_section_divider":false,"divider_width":"fixed"}},"custom_testominal_Rw9XHL":{"type":"Custom-Testominal","blocks":{"testimonial_mmwLXY":{"type":"testimonial","settings":{"review_text":"Bestilte en tæppe hos dem på tilbud. Pludselig opstod der forvirring på deres lager om den var udsolgt eller ej.\nEfter en kort og hurtig \"samtale\" via mail, fik jeg muligheden til at bestille tæppet igen til samme tilbudspris.\nFik pengene retur fra første m, og overskydende penge fra min anden odre retur efter et par dage.\nTæpper i rigtig god kvalitet.","customer_name":"Frank L."}},"testimonial_UdNTGV":{"type":"testimonial","settings":{"review_text":"Jeg har købt tæpper hos MK tæpper i flere år og de har aldrig skuffet. Helt fra da min lille datter var til enhjørning tæppe til hun blev ældre og vi købte en af deres soft touch til hendes værelse. Jeg har også købt et mørkt med mønster til kontorer, og i vore stue har vi deres Soft touch tæppe og pudebetræk i 2 forskellige farver.\nLevering, kvalitet og service tip top. I får de varmeste anbefalinger herfra!","customer_name":"Louise C."}},"testimonial_BCxRm4":{"type":"testimonial","settings":{"review_text":"Tæpperne er ikke helt som på billedet på hjemmesiden, de er heldigvis betydelig pænere i virkeligheden.\nGod service hele vejen igennem med mails fra dem under leveringsprocessen så man kan følge med. Selv kort tid efter de er leveret kom der mail fra dem om at de nu var leveret.\n\nLidt lang leveringstid fordi tæpperne kom fra Tyskland hvor de åbenbart har deres lager.","customer_name":"B. Lund"}},"testimonial_UwCzJx":{"type":"testimonial","settings":{"review_text":"Bestilte et super soft deluxe taupe tæppe på hjemmesiden. Inden der var gået 24t havde jeg fået leveret varen. Jeg er meget tilfreds med produktets kvalitet, håndtering af handelen og hurtig levering!\n\nDet er absolut ikke sidste gang jeg vil handle hos jer 😀","customer_name":"Tenna J."}},"testimonial_MrMVat":{"type":"testimonial","settings":{"review_text":"Stort udvalg af flotte tæpper til gode priser. Hjemmesiden er nem at finde rundt i og tæppet så præcis ud som på billederne. Fragten var upåklagelig og varen var forsvarligt pakket ind. Stor tilfredshed herfra 👌😊","customer_name":"Ahmed Kaawach"}}},"block_order":["testimonial_mmwLXY","testimonial_UdNTGV","testimonial_BCxRm4","testimonial_UwCzJx","testimonial_MrMVat"],"name":"Custom Testimonial Carousel","settings":{"heading":"FLERE TUSINDE HAR VALGT OS","subheading":"Stol ikke kun på os, stol på vores community","star_image":"shopify:\/\/shop_images\/t-stars.svg","bg_color":"#ffffff","margin_top":0,"margin_bottom":0,"padding_top":60,"padding_bottom":60}},"17714155985edbda56":{"type":"apps","blocks":{"klarna_on_site_messaging_app_block_fLrjCi":{"type":"shopify:\/\/apps\/klarna-on-site-messaging\/blocks\/app-block\/b95936a9-74b6-4a95-8103-6a1b6459c25e","settings":{"data_key":"credit-promotion-auto-size","theme":"default","topPadding":"0","bottomPadding":"0","messagePrefix":""}}},"block_order":["klarna_on_site_messaging_app_block_fLrjCi"],"disabled":true,"settings":{"include_margins":true,"padding_top":0,"padding_bottom":0}}},"order":["breadcrumbs","main","image_with_text_ndXRmK","image_with_text_kqXfRQ","related-products","custom_testominal_Rw9XHL","17714155985edbda56"]}
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "custom_css": [
+        "@media (min-width: 1280px) {.breadcrumbs {padding-inline: 5rem; }}"
+      ],
+      "settings": {
+        "container": "fixed",
+        "text_alignment": "start",
+        "padding_top": 16,
+        "padding_bottom": 20
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "custom_trustpilot_XfydpY": {
+          "type": "custom-trustpilot",
+          "settings": {
+            "trust_image": "shopify://shop_images/t-stars.svg",
+            "trust_text": "<p>⭐ 4.4 / 5 – 588 reviews</p>",
+            "trust_link": "https://dk.trustpilot.com/review/mktaepper.dk?utm_medium=trustbox&utm_source=MicroReviewCount"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h2"
+          }
+        },
+        "meta": {
+          "type": "meta",
+          "disabled": true,
+          "settings": {
+            "link_color": "#1d349a",
+            "show_vendor": true,
+            "show_product_type": true,
+            "show_sku": false,
+            "show_barcode": false
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "icon_with_text": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "title_font": "body-bolder",
+            "title_size": "text-base",
+            "icon_1": "check",
+            "heading_1": "Gratis levering",
+            "icon_2": "check",
+            "heading_2": "Øko-certificeret",
+            "icon_3": "check",
+            "heading_3": "Fysisk showroom",
+            "icon_4": "calendar",
+            "heading_4": "Prøv i 30 dage"
+          }
+        },
+        "klarna_on_site_messaging_app_block_fzhTDC": {
+          "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
+          "settings": {
+            "data_key": "credit-promotion-badge",
+            "theme": "default",
+            "topPadding": "0",
+            "bottomPadding": "0",
+            "messagePrefix": ""
+          }
+        },
+        "inventory": {
+          "type": "inventory",
+          "settings": {
+            "inventory-text": "På lager. Klar til afsendelse",
+            "text_style": "body",
+            "inventory_threshold": 0,
+            "show_inventory_quantity": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_type": "shopify_swatch",
+            "swatch_style": "square",
+            "swatch_size": 32,
+            "button_style": "normal",
+            "size_title": "Size",
+            "size_chart_from_page": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": true
+          }
+        },
+        "payment_info": {
+          "type": "payment_info",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "heading": "",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h5",
+            "description": "",
+            "show_payment_icons": true,
+            "show_below_product_media": false
+          }
+        },
+        "icon_with_text_UAYgQU": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "vertical",
+            "title_font": "body",
+            "title_size": "text-base",
+            "icon_1": "car-simple",
+            "heading_1": "Gratis og hurtig levering til hjemmet",
+            "icon_2": "arrow-up-left",
+            "heading_2": "Over <strong>10.000</strong> glade kunder",
+            "icon_3": "smiley",
+            "heading_3": "Telefon<strong>:</strong> <strong>50 34 50 23</strong>",
+            "icon_4": "calendar",
+            "heading_4": "Prøv i 30 dage"
+          }
+        },
+        "pickup_availability": {
+          "type": "pickup_availability",
+          "settings": {}
+        },
+        "promotion_alert_L7ipQp": {
+          "type": "promotion_alert",
+          "disabled": true,
+          "settings": {
+            "text_color": "#049b6e",
+            "icon": "lightning",
+            "heading": "Tidsbegrænset tilbud",
+            "description": "<p>Få 20 USD i rabat, når du bruger 1.000 USD eller mere! <a href=\"/collections/all\" title=\"All products\">Læs mere</a></p>"
+          }
+        },
+        "complementary": {
+          "type": "complementary",
+          "settings": {
+            "block_heading": "Perfect Match With",
+            "heading_size": "h4",
+            "show_below_product_media": true,
+            "make_collapsible_row": false,
+            "icon": "tag",
+            "product_list_limit": 6,
+            "layout": "horizontal-list",
+            "columns": 3,
+            "image_ratio": "1/1",
+            "enable_quick_add": true
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Beskrivelse",
+            "heading_size": "h4",
+            "icon": "none",
+            "content": "{{ product.description }}",
+            "page": "content",
+            "default_open": false,
+            "show_below_product_media": true
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Levering & Returnering",
+            "heading_size": "h4",
+            "icon": "none",
+            "content": "<h5>🚚 Levering</h5><h6><strong>Gratis levering til døren</strong></h6><ul><li>Gratis levering til døren på alle løse tæpper og boligtilbehør i Danmark<br/></li><li>Gratis levering til døren ved køb over <strong>999 kr.</strong> til Sverige<br/></li></ul><p><strong>Levering til kantsten</strong></p><ul><li>Gælder for laminat, vinylgulv og væg-til-væg tæpper<br/></li><li>Pris fra <strong>599 kr.</strong><br/></li></ul><h6><strong>Leveringsinformation</strong></h6><ul><li>Pakker leveres med <strong>GLS</strong> på hverdage mellem ca. kl. <strong>08–16</strong><br/></li><li>Alle leveringer sker i samarbejde med <strong>GLS eller Danske Fragtmænd</strong><br/></li><li>Er du ikke hjemme ved levering, bliver pakken automatisk afleveret i en <strong>GLS PakkeShop</strong> nær dig (maks. 20 kg)<br/></li></ul><h5>🔄 Returnering</h5><h6><strong>Returret</strong></h6><ul><li>Du har <strong>30 dages returret</strong> på løse tæpper og boligtilbehør<br/></li><li>Kunden betaler selv for returnering<br/></li></ul><h6><strong>Pris for returnering</strong></h6><ul><li>Pris fra <strong>150 kr. i Danmark</strong><br/></li><li>Prisen afhænger af varens størrelse og vægt<br/></li></ul><h6><strong>Sådan returnerer du</strong></h6><ul><li>Kontakt os på <a><strong>info@mktaepper.dk</strong></a> for at anmode om returnering<br/></li><li>Vi sender dig et <strong>returlabel/link</strong><br/></li><li>Returnering skal ske via <strong>GLS</strong><br/></li><li>Retur til PakkeShop: maks. <strong>20 kg</strong><br/></li><li>Afhentning på adresse er muligt mod <strong>ekstra tillæg</strong></li></ul><h6><strong>Undtagelser</strong></h6><p>Der er <strong>ingen returret</strong> på rullevarer som <strong>vinylgulv og væg-til-væg tæpper</strong>, da disse skæres efter kundens specifikke mål<strong>.</strong></p>",
+            "page": "",
+            "default_open": false,
+            "show_below_product_media": true
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Kundeservice",
+            "heading_size": "h4",
+            "icon": "none",
+            "content": "<h5>📞 Kontakt os</h5><h6><strong>Kontaktoplysninger</strong></h6><ul><li><strong>E-mail:</strong> <a>info@mktaepper.dk</a><br/></li><li><strong>Telefon:</strong> 50 34 50 23<br/></li></ul><p>Vi står altid klar til at hjælpe dig i vores åbningstid – uanset om du har brug for råd og vejledning om vores produkter, hjælp til bestilling eller spørgsmål om returnering. Tøv endelig ikke med at kontakte os.</p><p><strong>Træffetider</strong></p><ul><li><strong>Mandag–fredag:</strong> kl. <strong>10.00–17.00</strong></li></ul>",
+            "page": "",
+            "default_open": false,
+            "show_below_product_media": true
+          }
+        },
+        "divider_pPz3Kw": {
+          "type": "divider",
+          "disabled": true,
+          "settings": {
+            "show_below_product_media": false
+          }
+        },
+        "social_sharing": {
+          "type": "social_sharing",
+          "disabled": true,
+          "settings": {}
+        },
+        "sticky_atc_bar_7HgNgP": {
+          "type": "sticky-atc-bar",
+          "settings": {
+            "visibility": "all",
+            "style": "minimalist",
+            "container": "full",
+            "show_atc_button": true,
+            "show_dynamic_checkout_buttons": false,
+            "show_quantity": true
+          }
+        },
+        "timer_block_xyz": {
+          "type": "timer",
+          "settings": {
+            "type": "fixed_time",
+            "time": "2026/06/30 11:59 PM",
+            "text": "Udsalget slutter om:",
+            "text_color": "#D32F2F"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "custom_trustpilot_XfydpY",
+        "meta",
+        "price",
+        "klarna_on_site_messaging_app_block_fzhTDC",
+        "icon_with_text",
+        "inventory",
+        "variant_picker",
+        "timer_block_xyz",
+        "buy_buttons",
+        "payment_info",
+        "icon_with_text_UAYgQU",
+        "pickup_availability",
+        "promotion_alert_L7ipQp",
+        "complementary",
+        "collapsible-row-1",
+        "collapsible-row-2",
+        "collapsible-row-3",
+        "divider_pPz3Kw",
+        "social_sharing",
+        "sticky_atc_bar_7HgNgP"
+      ],
+      "custom_css": [
+        "@media (min-width: 1280px) {.product {padding-inline: 5rem; }}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "use_color_scheme_in_container": false,
+        "enable_sticky_info": true,
+        "media_size": "large",
+        "gallery_layout": "columns",
+        "mobile_thumbnails": "show",
+        "show_image_border": false,
+        "enable_image_zoom": true,
+        "enable_video_looping": true,
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "image_with_text_ndXRmK": {
+      "type": "image-with-text",
+      "blocks": {
+        "badge_X4ygyR": {
+          "type": "badge",
+          "settings": {
+            "color_scheme": "scheme-13",
+            "text": "",
+            "image": "shopify://shop_images/Asset_27_11zon_155a02fe-dc68-4123-96ec-859e302ae37d_1.png",
+            "position_mobile": "right"
+          }
+        },
+        "heading_cJmpJA": {
+          "type": "heading",
+          "settings": {
+            "heading": "MK Tæpper Showroom",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h3"
+          }
+        },
+        "text_Qd7twE": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Adresse: </strong>Østre Alle 36, 4200 Slagelse</p><p><strong>Åbningstider:<br/></strong>Mandag - Torsdag: kl.10-17<br/>Fredag: kl.10-17.30<br/>Lørdag: kl.10-15<br/>Søndag: Lukket</p><p><strong>Åbningstider mellem jul & nytår 2025/2026</strong></p><p>Lukket fra d. 24/12 til og med d. 28/12.</p><p>Lukket d. 1/1-2026</p>",
+            "subtext_color": true
+          }
+        },
+        "icon_with_text_egakxw": {
+          "type": "icon_with_text",
+          "disabled": true,
+          "settings": {
+            "icon": "map-pin",
+            "icon_width": 24,
+            "color": "#000000",
+            "heading": "Produkt lokalt i Danmark",
+            "heading_size": "h5",
+            "text": "",
+            "vertical_alignment": "start"
+          }
+        },
+        "icon_with_text_zzgnn9": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "smiley",
+            "icon_width": 24,
+            "color": "#000000",
+            "heading": "Over 10000+ glade kunder",
+            "heading_size": "h5",
+            "text": "",
+            "vertical_alignment": "start"
+          }
+        },
+        "icon_with_text_e9gpp3": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "stool",
+            "icon_width": 24,
+            "color": "#000000",
+            "heading": "Gratis levering til døren",
+            "heading_size": "h5",
+            "text": "",
+            "vertical_alignment": "start"
+          }
+        },
+        "button_Wwp6AC": {
+          "type": "button",
+          "settings": {
+            "button_label": "Vis vej",
+            "button_link": "https://maps.google.com/?daddr=Østre%20Alle%2036,%204200%20Slagelse",
+            "button_style": "btn--primary",
+            "button_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "badge_X4ygyR",
+        "heading_cJmpJA",
+        "text_Qd7twE",
+        "icon_with_text_egakxw",
+        "icon_with_text_zzgnn9",
+        "icon_with_text_e9gpp3",
+        "button_Wwp6AC"
+      ],
+      "custom_css": [
+        ".image-with-text__content {max-width: 45rem; --text-margin-top: 2rem;}",
+        "@media (min-width: 1280px) {.image-with-text__media {padding-inline-start: 5rem; }}"
+      ],
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "media_type": "video",
+        "image": "shopify://shop_images/60B76632-6F60-4550-9F11-1A3D14241ED6_092ff8aa-4a5e-4a6a-8b26-9af66cf28e29.jpg",
+        "video_url": "",
+        "video_alt": "",
+        "video_autoplay": true,
+        "video_muted": true,
+        "video_loop": true,
+        "video_controls": false,
+        "image_position": "left",
+        "image_width": 50,
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "inherit",
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "image_with_text_kqXfRQ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_ngPQi3": {
+          "type": "heading",
+          "settings": {
+            "heading": "MK Tæpper Showroom",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h1"
+          }
+        },
+        "text_nF69XB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Besøg vores showroom og oplev en del af vores store tæppeudvalg, samt få professionel vejledning ift. valg af dit nye tæppe!</p><p><strong>Adresse: </strong>Østre Alle 36, 4200 Slagelse</p><p><strong>Åbningstider:<br/></strong>Mandag - Torsdag: kl.10-17<br/>Fredag: kl.10-17.30<br/>Lørdag: kl.10-15<br/>Søndag: Lukket</p><p><strong>Åbningstider mellem jul & nytår 2025/2026</strong></p><p>Lukket fra d. 24/12 til og med d. 28/12.</p><p>Lukket d. 1/1-2026</p>",
+            "subtext_color": true
+          }
+        },
+        "button_fQzFTq": {
+          "type": "button",
+          "settings": {
+            "button_label": "find vej",
+            "button_link": "https://www.google.com/maps/dir//%C3%98stre+Alle+36,+4200+Slagelse,+Denmark/@30.1556177,71.7121633,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x464d63d4d86f1b4f:0xcc4ca2f7dc45e1a6!2m2!1d11.3684725!2d55.4099965?entry=ttu&g_ep=EgoyMDI2MDIwMy4wIKXMDSoASAFQAw%3D%3D",
+            "button_style": "btn--primary",
+            "button_icon": "none"
+          }
+        }
+      },
+      "block_order": [
+        "heading_ngPQi3",
+        "text_nF69XB",
+        "button_fQzFTq"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "@media (min-width: 1024px) {.image-with-text__wrapper {padding-inline: 5rem; } .image-with-text__content {--text-margin-top: 2rem; }}",
+        ".image-with-text__content {max-width: 52rem;}"
+      ],
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "scheme-13",
+        "media_type": "video",
+        "image": "shopify://shop_images/2_504bb267-b44f-4cda-8c46-81eadeb58f10.jpg",
+        "video_url": "",
+        "video_alt": "",
+        "video_autoplay": true,
+        "video_muted": true,
+        "video_loop": true,
+        "video_controls": false,
+        "image_position": "right",
+        "image_width": 50,
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "mobile_content_alignment": "inherit",
+        "show_section_divider": false,
+        "divider_width": "fixed",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "scheme-1",
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "Du vil måske syntes om?",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h2",
+        "description": "",
+        "limit": 6,
+        "columns": 5,
+        "column_gap": "medium",
+        "row_gap": "inherit",
+        "enable_slider": true,
+        "navigation_position": "bottom",
+        "pcard_image_ratio": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "show_progress_bar": true,
+        "padding_top": 60,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "custom_testominal_Rw9XHL": {
+      "type": "Custom-Testominal",
+      "blocks": {
+        "testimonial_mmwLXY": {
+          "type": "testimonial",
+          "settings": {
+            "review_text": "Bestilte en tæppe hos dem på tilbud. Pludselig opstod der forvirring på deres lager om den var udsolgt eller ej.\nEfter en kort og hurtig \"samtale\" via mail, fik jeg muligheden til at bestille tæppet igen til samme tilbudspris.\nFik pengene retur fra første m, og overskydende penge fra min anden odre retur efter et par dage.\nTæpper i rigtig god kvalitet.",
+            "customer_name": "Frank L."
+          }
+        },
+        "testimonial_UdNTGV": {
+          "type": "testimonial",
+          "settings": {
+            "review_text": "Jeg har købt tæpper hos MK tæpper i flere år og de har aldrig skuffet. Helt fra da min lille datter var til enhjørning tæppe til hun blev ældre og vi købte en af deres soft touch til hendes værelse. Jeg har også købt et mørkt med mønster til kontorer, og i vore stue har vi deres Soft touch tæppe og pudebetræk i 2 forskellige farver.\nLevering, kvalitet og service tip top. I får de varmeste anbefalinger herfra!",
+            "customer_name": "Louise C."
+          }
+        },
+        "testimonial_BCxRm4": {
+          "type": "testimonial",
+          "settings": {
+            "review_text": "Tæpperne er ikke helt som på billedet på hjemmesiden, de er heldigvis betydelig pænere i virkeligheden.\nGod service hele vejen igennem med mails fra dem under leveringsprocessen så man kan følge med. Selv kort tid efter de er leveret kom der mail fra dem om at de nu var leveret.\n\nLidt lang leveringstid fordi tæpperne kom fra Tyskland hvor de åbenbart har deres lager.",
+            "customer_name": "B. Lund"
+          }
+        },
+        "testimonial_UwCzJx": {
+          "type": "testimonial",
+          "settings": {
+            "review_text": "Bestilte et super soft deluxe taupe tæppe på hjemmesiden. Inden der var gået 24t havde jeg fået leveret varen. Jeg er meget tilfreds med produktets kvalitet, håndtering af handelen og hurtig levering!\n\nDet er absolut ikke sidste gang jeg vil handle hos jer 😀",
+            "customer_name": "Tenna J."
+          }
+        },
+        "testimonial_MrMVat": {
+          "type": "testimonial",
+          "settings": {
+            "review_text": "Stort udvalg af flotte tæpper til gode priser. Hjemmesiden er nem at finde rundt i og tæppet så præcis ud som på billederne. Fragten var upåklagelig og varen var forsvarligt pakket ind. Stor tilfredshed herfra 👌😊",
+            "customer_name": "Ahmed Kaawach"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_mmwLXY",
+        "testimonial_UdNTGV",
+        "testimonial_BCxRm4",
+        "testimonial_UwCzJx",
+        "testimonial_MrMVat"
+      ],
+      "name": "Custom Testimonial Carousel",
+      "settings": {
+        "heading": "FLERE TUSINDE HAR VALGT OS",
+        "subheading": "Stol ikke kun på os, stol på vores community",
+        "star_image": "shopify://shop_images/t-stars.svg",
+        "bg_color": "#ffffff",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "17714155985edbda56": {
+      "type": "apps",
+      "blocks": {
+        "klarna_on_site_messaging_app_block_fLrjCi": {
+          "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
+          "settings": {
+            "data_key": "credit-promotion-auto-size",
+            "theme": "default",
+            "topPadding": "0",
+            "bottomPadding": "0",
+            "messagePrefix": ""
+          }
+        }
+      },
+      "block_order": [
+        "klarna_on_site_messaging_app_block_fLrjCi"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main",
+    "image_with_text_ndXRmK",
+    "image_with_text_kqXfRQ",
+    "related-products",
+    "custom_testominal_Rw9XHL",
+    "17714155985edbda56"
+  ]
+}
