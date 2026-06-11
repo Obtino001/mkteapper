@@ -210,7 +210,7 @@
         "sticky_atc_bar_7HgNgP": {
           "type": "sticky-atc-bar",
           "settings": {
-            "visibility": "all",
+            "visibility": "mobile",
             "style": "minimalist",
             "container": "full",
             "show_atc_button": true,
