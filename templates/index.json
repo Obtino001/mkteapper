@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "collection_list_slider_6qbNfj": {
@@ -159,8 +168,7 @@
             "button_label": "SHOP NU",
             "button_link": "shopify://collections/mid-season-sale",
             "button_style": "btn--primary",
-            "button_icon": "none",
-            "show_payment_icons": true
+            "button_icon": "none"
           }
         }
       },

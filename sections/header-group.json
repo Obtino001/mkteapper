@@ -51,7 +51,7 @@
       ],
       "name": "Trust Announcement Bar",
       "settings": {
-        "bg_color": "#242833",
+        "bg_color": "#000000",
         "text_color": "#ffffff",
         "icon_color": "#d8a94f",
         "phone_text": "+45 70 70 71 30",
