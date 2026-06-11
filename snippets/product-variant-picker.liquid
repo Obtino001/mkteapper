@@ -183,7 +183,7 @@
   {%- assign bis_modal_id = 'BISModal-' | append: section.id -%}
   <div id="custom-bis-container-{{ section.id }}" class="custom-bis-wrapper" style="display: {% if product.selected_or_first_available_variant.available %}none{% else %}block{% endif %}; margin-top: 1.5rem;">
     <button type="button" class="btn btn--primary w-full" aria-controls="{{ bis_modal_id }}" aria-haspopup="dialog">
-      Giv mig besked, når den er på lager
+      <span class="btn__text">Giv mig besked, når den er på lager</span>
     </button>
   </div>
   
