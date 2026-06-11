@@ -27,6 +27,7 @@
         "custom_trustpilot_XfydpY": {
           "type": "custom-trustpilot",
           "settings": {
+            "official_code": "",
             "trust_image": "shopify://shop_images/t-stars.svg",
             "trust_text": "<p> 4.4 / 5 – 588 reviews</p>",
             "trust_link": "https://dk.trustpilot.com/review/mktaepper.dk?utm_medium=trustbox&utm_source=MicroReviewCount"
@@ -164,7 +165,7 @@
           "settings": {
             "block_heading": "Perfect Match With",
             "heading_size": "h4",
-            "show_below_product_media": true,
+            "show_below_product_media": false,
             "make_collapsible_row": false,
             "icon": "tag",
             "product_list_limit": 6,
