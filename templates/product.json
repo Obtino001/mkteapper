@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "breadcrumbs": {
@@ -19,7 +28,7 @@
           "type": "custom-trustpilot",
           "settings": {
             "trust_image": "shopify://shop_images/t-stars.svg",
-            "trust_text": "<p>⭐ 4.4 / 5 – 588 reviews</p>",
+            "trust_text": "<p> 4.4 / 5 – 588 reviews</p>",
             "trust_link": "https://dk.trustpilot.com/review/mktaepper.dk?utm_medium=trustbox&utm_source=MicroReviewCount"
           }
         },
@@ -44,6 +53,16 @@
           "type": "price",
           "settings": {}
         },
+        "klarna_on_site_messaging_app_block_fzhTDC": {
+          "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
+          "settings": {
+            "data_key": "credit-promotion-badge",
+            "theme": "default",
+            "topPadding": "0",
+            "bottomPadding": "0",
+            "messagePrefix": ""
+          }
+        },
         "icon_with_text": {
           "type": "icon-with-text",
           "settings": {
@@ -55,19 +74,7 @@
             "icon_2": "check",
             "heading_2": "Øko-certificeret",
             "icon_3": "check",
-            "heading_3": "Fysisk showroom",
-            "icon_4": "calendar",
-            "heading_4": "Prøv i 30 dage"
-          }
-        },
-        "klarna_on_site_messaging_app_block_fzhTDC": {
-          "type": "shopify://apps/klarna-on-site-messaging/blocks/app-block/b95936a9-74b6-4a95-8103-6a1b6459c25e",
-          "settings": {
-            "data_key": "credit-promotion-badge",
-            "theme": "default",
-            "topPadding": "0",
-            "bottomPadding": "0",
-            "messagePrefix": ""
+            "heading_3": "Fysisk showroom"
           }
         },
         "inventory": {
@@ -89,6 +96,16 @@
             "button_style": "normal",
             "size_title": "Size",
             "size_chart_from_page": ""
+          }
+        },
+        "timer_block_xyz": {
+          "type": "timer",
+          "settings": {
+            "text_color": "#d32f2f",
+            "type": "fixed_time",
+            "duration": "every_month",
+            "time": "2026/06/30 11:59 PM",
+            "text": "Udsalget slutter om:"
           }
         },
         "buy_buttons": {
@@ -125,9 +142,7 @@
             "icon_2": "arrow-up-left",
             "heading_2": "Over <strong>10.000</strong> glade kunder",
             "icon_3": "smiley",
-            "heading_3": "Telefon<strong>:</strong> <strong>50 34 50 23</strong>",
-            "icon_4": "calendar",
-            "heading_4": "Prøv i 30 dage"
+            "heading_3": "Telefon<strong>:</strong> <strong>50 34 50 23</strong>"
           }
         },
         "pickup_availability": {
@@ -217,20 +232,11 @@
             "show_dynamic_checkout_buttons": false,
             "show_quantity": true
           }
-        },
-        "timer_block_xyz": {
-          "type": "timer",
-          "settings": {
-            "type": "fixed_time",
-            "time": "2026/06/30 11:59 PM",
-            "text": "Udsalget slutter om:",
-            "text_color": "#D32F2F"
-          }
         }
       },
       "block_order": [
-        "title",
         "custom_trustpilot_XfydpY",
+        "title",
         "meta",
         "price",
         "klarna_on_site_messaging_app_block_fzhTDC",
