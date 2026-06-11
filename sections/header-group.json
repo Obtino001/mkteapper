@@ -1,7 +1,65 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "name": "t:sections.header.name",
   "type": "header",
   "sections": {
+    "trust_bar_AHMrnh": {
+      "type": "trust-bar",
+      "blocks": {
+        "usp_APA9YT": {
+          "type": "usp",
+          "settings": {
+            "text": "Finansiering fra 0%",
+            "icon": "<svg viewbox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"9\" stroke=\"currentColor\" stroke-width=\"1.8\"></circle><path d=\"M8.2 15.8L15.8 8.2\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"></path><circle cx=\"8.3\" cy=\"8.3\" r=\"1.3\" fill=\"currentColor\"></circle><circle cx=\"15.7\" cy=\"15.7\" r=\"1.3\" fill=\"currentColor\"></circle></svg>"
+          }
+        },
+        "usp_iaHXQ3": {
+          "type": "usp",
+          "settings": {
+            "text": "Gratis levering 1-3 hverdage",
+            "icon": "<svg viewbox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M3.5 7H14v9H3.5V7Z\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linejoin=\"round\"></path><path d=\"M14 10h3.6l2.9 3v3H14v-6Z\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linejoin=\"round\"></path><circle cx=\"7.2\" cy=\"17.2\" r=\"1.8\" stroke=\"currentColor\" stroke-width=\"1.8\"></circle><circle cx=\"17.3\" cy=\"17.2\" r=\"1.8\" stroke=\"currentColor\" stroke-width=\"1.8\"></circle></svg>"
+          }
+        },
+        "usp_adcBtp": {
+          "type": "usp",
+          "settings": {
+            "text": "Op til 3 års garanti",
+            "icon": "<svg viewbox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M12 3.5l7 3v5.2c0 4.2-2.8 7.8-7 9.4-4.2-1.6-7-5.2-7-9.4V6.5l7-3Z\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linejoin=\"round\"></path><text x=\"12\" y=\"15.4\" text-anchor=\"middle\" font-size=\"8.5\" font-family=\"Arial, sans-serif\" font-weight=\"700\" fill=\"currentColor\">3</text></svg>"
+          }
+        },
+        "usp_xN7eYx": {
+          "type": "usp",
+          "settings": {
+            "text": "10.000+ tilfredse kunder",
+            "icon": "<svg viewbox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M9.3 11.2a3.4 3.4 0 1 0 0-6.8 3.4 3.4 0 0 0 0 6.8Z\" stroke=\"currentColor\" stroke-width=\"1.8\"></path><path d=\"M3.8 19.4c.8-3.4 2.8-5.2 5.5-5.2s4.7 1.8 5.5 5.2\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"></path><path d=\"M15.4 11.2a2.8 2.8 0 1 0 0-5.6\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"></path><path d=\"M16.3 14.2c2.1.3 3.5 2 4 5.2\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\"></path></svg>"
+          }
+        }
+      },
+      "block_order": [
+        "usp_APA9YT",
+        "usp_iaHXQ3",
+        "usp_adcBtp",
+        "usp_xN7eYx"
+      ],
+      "name": "Trust Announcement Bar",
+      "settings": {
+        "bg_color": "#242833",
+        "text_color": "#ffffff",
+        "icon_color": "#d8a94f",
+        "phone_text": "+45 70 70 71 30",
+        "phone_url": "",
+        "phone_icon": "<svg viewbox=\"0 0 24 24\" fill=\"none\" aria-hidden=\"true\"><path d=\"M7.2 4.4l2-.8c.7-.3 1.5.1 1.8.8l.9 2.2c.2.6.1 1.3-.4 1.7l-1.1.9c.8 1.8 2.2 3.2 4 4l.9-1.1c.4-.5 1.1-.7 1.7-.4l2.2.9c.7.3 1.1 1.1.8 1.8l-.8 2c-.3.7-1 1.1-1.8 1-6.1-.7-10.9-5.5-11.6-11.6-.1-.7.3-1.4 1.4-1.8Z\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linejoin=\"round\"></path></svg>",
+        "marquee_speed": 22
+      }
+    },
     "topbar_3YD96h": {
       "type": "topbar",
       "blocks": {
@@ -76,24 +134,6 @@
         "marquee_speed": 40,
         "padding_top": 10,
         "padding_bottom": 10
-      }
-    },
-    "timer_section_jUHUkG": {
-      "type": "Timer-section",
-      "disabled": false,
-      "name": "Custom Countdown Section",
-      "settings": {
-        "heading": "End of season sale op til 40%",
-        "button_label": "Se tilbud",
-        "button_url": "shopify://collections/mid-season-sale",
-        "bg_color": "#ededed",
-        "text_color": "#000000",
-        "padding_top": 10,
-        "padding_bottom": 10,
-        "type": "evergreen",
-        "number_size": "h4",
-        "duration": "every_month",
-        "time": "2026/12/31 11:59 PM"
       }
     },
     "header": {
@@ -284,9 +324,27 @@
         "navigation_padding_top": 0,
         "navigation_padding_bottom": 10
       }
+    },
+    "timer_section_jUHUkG": {
+      "type": "Timer-section",
+      "name": "Custom Countdown Section",
+      "settings": {
+        "heading": "End of season sale op til 40%",
+        "button_label": "Se tilbud",
+        "button_url": "shopify://collections/mid-season-sale",
+        "bg_color": "#ededed",
+        "text_color": "#000000",
+        "padding_top": 10,
+        "padding_bottom": 10,
+        "type": "evergreen",
+        "number_size": "h4",
+        "duration": "every_month",
+        "time": "2026/12/31 11:59 PM"
+      }
     }
   },
   "order": [
+    "trust_bar_AHMrnh",
     "topbar_3YD96h",
     "header",
     "timer_section_jUHUkG"
