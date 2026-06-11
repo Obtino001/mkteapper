@@ -159,7 +159,8 @@
             "button_label": "SHOP NU",
             "button_link": "shopify://collections/mid-season-sale",
             "button_style": "btn--primary",
-            "button_icon": "none"
+            "button_icon": "none",
+            "show_payment_icons": true
           }
         }
       },
