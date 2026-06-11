@@ -296,13 +296,29 @@ if (!customElements.get('product-info')) {
         const addButton = productForm.querySelector('[name="add"]');
         const addButtonText = productForm.querySelector('[name="add"] > span');
         if (!addButton) return;
+        
+        const bisContainer = document.getElementById(`custom-bis-container-${this.dataset.section}`);
+        const bisVariantInput = document.getElementById(`bis-variant-name-${this.dataset.section}`);
 
         if (disable) {
           addButton.setAttribute('disabled', 'disabled');
           if (text) addButtonText.textContent = text;
+          
+          if (bisContainer && text === FoxTheme.variantStrings.soldOut) {
+             bisContainer.style.display = 'block';
+             if (bisVariantInput && this.currentVariant) {
+               bisVariantInput.value = this.currentVariant.title;
+             }
+          } else if (bisContainer) {
+             bisContainer.style.display = 'none';
+          }
         } else {
           addButton.removeAttribute('disabled');
           addButtonText.innerHTML = FoxTheme.variantStrings.addToCart;
+          
+          if (bisContainer) {
+             bisContainer.style.display = 'none';
+          }
         }
 
         if (!modifyClass) return;

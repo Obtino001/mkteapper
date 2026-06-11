@@ -178,4 +178,41 @@
       </basic-modal>
     </div>
   {%- endif -%}
+
+  {%- comment -%} Fully Custom Back In Stock {%- endcomment -%}
+  {%- assign bis_modal_id = 'BISModal-' | append: section.id -%}
+  <div id="custom-bis-container-{{ section.id }}" class="custom-bis-wrapper" style="display: {% if product.selected_or_first_available_variant.available %}none{% else %}block{% endif %}; margin-top: 1.5rem;">
+    <button type="button" class="btn btn--primary w-full" aria-controls="{{ bis_modal_id }}" aria-haspopup="dialog">
+      Giv mig besked, når den er på lager
+    </button>
+  </div>
+  
+  <basic-modal id="{{ bis_modal_id }}" class="drawer modal" style="--modal-width: 50rem;">
+    <div class="fixed-overlay" aria-controls="{{ bis_modal_id }}"></div>
+    <div class="drawer__inner color-{{ settings.overlay_color_scheme }}">
+      <button class="drawer__close-btn" aria-controls="{{ bis_modal_id }}" aria-label="{{ 'accessibility.close' | t }}">
+        {% render 'icon-close' %}
+      </button>
+      <div class="drawer__body v-scrollable h-full rte" style="padding: 3rem;">
+        <h2 class="h3" style="margin-bottom: 1rem;">Giv mig besked, når den er på lager</h2>
+        <p style="margin-bottom: 2rem;">Indtast din e-mailadresse nedenfor, så giver vi dig besked, når varen er på lager igen.</p>
+        {%- form 'contact', id: 'BISContactForm' -%}
+          {%- if form.posted_successfully? -%}
+            <p class="form__message success" tabindex="-1" autofocus style="color: green; margin-bottom: 1rem;">
+              Tak! Vi giver dig besked, når den er tilbage.
+            </p>
+          {%- endif -%}
+          <input type="hidden" name="contact[tags]" value="back-in-stock-request">
+          <input type="hidden" name="contact[product]" value="{{ product.title | escape }}">
+          <input type="hidden" name="contact[variant]" id="bis-variant-name-{{ section.id }}" value="{{ product.selected_or_first_available_variant.title | escape }}">
+          <input type="hidden" name="contact[product_url]" value="{{ shop.url }}{{ product.url }}">
+          
+          <div class="field" style="margin-bottom: 1.5rem;">
+            <input class="form-control" autocomplete="email" type="email" id="ContactForm-email-bis" name="contact[email]" placeholder="Din e-mailadresse" required style="width: 100%; padding: 1.2rem; border: 1px solid rgba(var(--color-foreground), 0.2); border-radius: var(--inputs-radius);">
+          </div>
+          <button type="submit" class="btn btn--primary w-full" style="width: 100%;">Tilmeld</button>
+        {%- endform -%}
+      </div>
+    </div>
+  </basic-modal>
 {%- endunless -%}
