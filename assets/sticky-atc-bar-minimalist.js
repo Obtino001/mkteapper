@@ -52,8 +52,7 @@ if (!customElements.get('sticky-atc-bar-minimalist')) {
         this.observer = new IntersectionObserver(
           (entries) => {
             entries.forEach((entry) => {
-              const isAboveViewport = !entry.isIntersecting && entry.boundingClientRect.top < 0;
-              this.classList.toggle(this.classes.isOpen, isAboveViewport);
+              this.classList.toggle(this.classes.isOpen, !entry.isIntersecting);
             });
           },
           { threshold: 1, rootMargin }

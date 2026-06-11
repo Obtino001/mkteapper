@@ -21,26 +21,30 @@
           <div class="{{ block_classes }}">
             {% render block %}
           </div>
-          {% when 'custom-trustpilot' %}
-  <div class="custom-trustpilot-main">
-    <a href="{{ block.settings.trust_link }}" target="blank" class="custom-trustpilot-flex">
-      
-      {% if block.settings.trust_image != blank %}
-        <div class="c-trustpilot-img">
-          <img 
-            src="{{ block.settings.trust_image | image_url: width: 200 }}" 
-            alt="{{ block.settings.trust_text | escape }}">
-        </div>
-      {% endif %}
-      
-      {% if block.settings.trust_text != blank %}
-        <div class="c-trustpilot-text">
-          <p>{{ block.settings.trust_text }}</p>
-        </div>
-      {% endif %}
+        {%- when 'custom-trustpilot' -%}
+          <div class="custom-trustpilot-main">
+            {% if block.settings.official_code != blank %}
+              {{ block.settings.official_code }}
+            {% else %}
+              <a href="{{ block.settings.trust_link }}" target="_blank" class="custom-trustpilot-flex">
+                
+                {% if block.settings.trust_image != blank %}
+                  <div class="c-trustpilot-img">
+                    <img 
+                      src="{{ block.settings.trust_image | image_url: width: 200 }}" 
+                      alt="{{ block.settings.trust_text | escape }}">
+                  </div>
+                {% endif %}
+                
+                {% if block.settings.trust_text != blank %}
+                  <div class="c-trustpilot-text">
+                    <p>{{ block.settings.trust_text }}</p>
+                  </div>
+                {% endif %}
 
-    </a>
-  </div>
+              </a>
+            {% endif %}
+          </div>
 
         {%- when 'divider' -%}
           <div class="{{ block_classes }}" {{ block.shopify_attributes }}>
