@@ -169,7 +169,10 @@
             "button_link": "shopify://collections/mid-season-sale",
             "button_style": "btn--primary",
             "button_icon": "none",
-            "show_payment_icons": true
+            "show_payment_icons": true,
+            "show_trustpilot": true,
+            "trustpilot_rating": "",
+            "trustpilot_reviews": "4,5 stjerner | Baseret på +110 anmeldelser"
           }
         }
       },

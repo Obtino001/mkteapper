@@ -263,71 +263,6 @@
         "padding_bottom": 60
       }
     },
-    "rug_size_guide": {
-      "type": "rug-size-guide",
-      "blocks": {
-        "living_1": {
-          "type": "size_guide_item",
-          "settings": {
-            "room_type": "living-room",
-            "size_text": "140x200 cm",
-            "title": "Kompakt Siddeområde",
-            "description": "<p>En 140x200 cm tæppe er fantastisk til at definere siddeområdet i en gennemsnitlig stue. Placer sofabordet midt på tæppet.</p>"
-          }
-        },
-        "living_2": {
-          "type": "size_guide_item",
-          "settings": {
-            "room_type": "living-room",
-            "size_text": "160x230 cm",
-            "title": "Standard Siddeområde",
-            "description": "<p>Perfekt til at rumme forbenene af din sofa og lænestole, hvilket samler rummet.</p>"
-          }
-        },
-        "living_3": {
-          "type": "size_guide_item",
-          "settings": {
-            "room_type": "living-room",
-            "size_text": "200x300 cm",
-            "title": "Stort Siddeområde",
-            "description": "<p>Et stort tæppe binder et rum sammen. Placer alle møbler fuldt ud på tæppet for et luksuriøst look.</p>"
-          }
-        },
-        "dining_1": {
-          "type": "size_guide_item",
-          "settings": {
-            "room_type": "dining-room",
-            "size_text": "200x300 cm",
-            "title": "Standard Spisestue",
-            "description": "<p>Sørg for, at dit tæppe er mindst 60 cm bredere end dit spisebord på alle sider, så stole kan trækkes ud uden at ramme kanten.</p>"
-          }
-        },
-        "bedroom_1": {
-          "type": "size_guide_item",
-          "settings": {
-            "room_type": "bedroom",
-            "size_text": "160x230 cm",
-            "title": "Dobbeltseng",
-            "description": "<p>Placer tæppet under de nederste to tredjedele af sengen for at skabe en blød landing for dine fødder om morgenen.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "living_1",
-        "living_2",
-        "living_3",
-        "dining_1",
-        "bedroom_1"
-      ],
-      "settings": {
-        "show_section": true,
-        "title": "Find Den Perfekte Størrelse",
-        "subtitle": "Brug vores premium guide til at vælge de rigtige tæppemål til dit rum.",
-        "background_color": "#ffffff",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
-    },
     "image_with_text_ndXRmK": {
       "type": "image-with-text",
       "blocks": {
@@ -620,7 +555,6 @@
   "order": [
     "breadcrumbs",
     "main",
-    "rug_size_guide",
     "image_with_text_ndXRmK",
     "image_with_text_kqXfRQ",
     "related-products",
