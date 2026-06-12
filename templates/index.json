@@ -596,6 +596,19 @@
         "divider_width": "fixed"
       }
     },
+    "trustpilot_badge_y3Ukzy": {
+      "type": "trustpilot-badge",
+      "name": "Custom Review Badge",
+      "settings": {
+        "stars_image": "shopify://shop_images/t-stars.svg",
+        "star_height": 24,
+        "badge_text": "4,5 stjerner | Baseret på +110 anmeldelser",
+        "badge_link": "",
+        "alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "custom_testominal_nTm4fY": {
       "type": "Custom-Testominal",
       "blocks": {
@@ -919,6 +932,19 @@
         "padding_bottom": 0,
         "show_section_divider": false,
         "divider_width": "fixed"
+      }
+    },
+    "trustpilot_badge_XWwJFr": {
+      "type": "trustpilot-badge",
+      "name": "Custom Review Badge",
+      "settings": {
+        "stars_image": "shopify://shop_images/t-stars.svg",
+        "star_height": 24,
+        "badge_text": "4,5 stjerner | Baseret på +110 anmeldelser",
+        "badge_link": "",
+        "alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     },
     "promotion_banner_VCkmzP": {
@@ -2205,10 +2231,12 @@
     "grid_banner_U8bxMc",
     "multicolumn_icon_nGkdU8",
     "featured_collection_4DTYg9",
+    "trustpilot_badge_y3Ukzy",
     "custom_testominal_nTm4fY",
     "collection_tabs_VexkkR",
     "featured_collection_bdaamt",
     "featured_collection_V6MXPy",
+    "trustpilot_badge_XWwJFr",
     "promotion_banner_VCkmzP",
     "custom_content_HPgFTK",
     "favorite_products_6Tg9Pn",
