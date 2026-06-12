@@ -168,7 +168,8 @@
             "button_label": "SHOP NU",
             "button_link": "shopify://collections/mid-season-sale",
             "button_style": "btn--primary",
-            "button_icon": "none"
+            "button_icon": "none",
+            "show_payment_icons": true
           }
         }
       },
@@ -426,15 +427,19 @@
           "type": "column",
           "settings": {
             "icon": "calendar",
-            "image": "",
             "max_width": 40,
             "max_width_mb": 40,
             "title": "<strong>Prøv i 30 dage</strong>",
             "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
             "heading_size": "h5",
             "heading_font": "heading",
             "text": "<p>100% tilfredshed</p>",
             "text_size": "text-base",
+            "button_label": "",
+            "button_link": "",
             "button_style": "btn--plain",
             "button_icon": "caret-right"
           }
