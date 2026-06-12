@@ -36,10 +36,18 @@
     white-space: nowrap;
   }
 
-  .iwao-trust-bar-{{ section.id }} .iwao-trust-bar__usp-wrap {
+  .iwao-trust-bar-{{ section.id }} .iwao-trust-bar__left,
+  .iwao-trust-bar-{{ section.id }} .iwao-trust-bar__right {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    gap: 24px;
+  }
+
+  .iwao-trust-bar-{{ section.id }} .iwao-trust-bar__center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
     min-width: 0;
   }
 
@@ -52,7 +60,7 @@
     align-items: center;
     gap: 10px;
     color: {{ section.settings.text_color | color_modify: 'alpha', 0.94 }} !important;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1;
     font-weight: 500;
     letter-spacing: 0.005em;
@@ -60,7 +68,6 @@
   }
 
   .iwao-trust-bar-{{ section.id }} a.iwao-trust-bar__phone {
-    margin-right: 34px; /* Phone on the left per desktop design */
     font-weight: 600;
     flex: 0 0 auto;
   }
@@ -82,9 +89,48 @@
   .iwao-trust-bar-{{ section.id }} .iwao-trust-bar__divider {
     width: 1px;
     height: 22px;
-    margin: 0 30px;
+    margin: 0 24px;
     background: {{ section.settings.text_color | color_modify: 'alpha', 0.22 }};
     flex: 0 0 1px;
+  }
+
+  /* Menu */
+  .iwao-trust-bar-{{ section.id }} .iwao-trust-bar__menu {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .iwao-trust-bar-{{ section.id }} .iwao-trust-bar__menu a {
+    color: {{ section.settings.text_color | color_modify: 'alpha', 0.94 }};
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .iwao-trust-bar-{{ section.id }} .iwao-trust-bar__menu a:hover {
+    color: {{ section.settings.text_color }};
+  }
+
+  /* Language/Country Selector */
+  .iwao-trust-bar-{{ section.id }} .iwao-trust-bar__country {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .iwao-trust-bar-{{ section.id }} .country-switcher button.disclosure__toggle {
+    color: {{ section.settings.text_color }} !important;
+    padding: 0;
+    background: transparent;
+    border: none;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: none;
+  }
+  .iwao-trust-bar-{{ section.id }} .country-switcher button.disclosure__toggle svg {
+    color: {{ section.settings.text_color }};
   }
 
   .iwao-trust-bar-{{ section.id }} .iwao-trust-bar__mobile { display: none; }
@@ -95,6 +141,8 @@
     .iwao-trust-bar-{{ section.id }} .iwao-trust-bar__item,
     .iwao-trust-bar-{{ section.id }} .iwao-trust-bar__phone { font-size: 13.5px; }
     .iwao-trust-bar-{{ section.id }} .iwao-trust-bar__icon { width: 17px; height: 17px; flex-basis: 17px; }
+    .iwao-trust-bar-{{ section.id }} .iwao-trust-bar__left,
+    .iwao-trust-bar-{{ section.id }} .iwao-trust-bar__right { gap: 16px; }
   }
 
   @media (max-width: 989px) {
@@ -233,25 +281,61 @@
     
     <!-- DESKTOP -->
     <div class="iwao-trust-bar__desktop">
-      {%- if section.settings.phone_text != blank -%}
-        <a class="iwao-trust-bar__phone" href="{{ section.settings.phone_url }}" aria-label="{{ section.settings.phone_text }}">
-          <div class="iwao-trust-bar__icon">
-            {{ section.settings.phone_icon }}
-          </div>
-          <span>{{ section.settings.phone_text }}</span>
-        </a>
-      {%- endif -%}
-
-      <div class="iwao-trust-bar__usp-wrap">
-        {%- for block in section.blocks -%}
-          <span class="iwao-trust-bar__item" {{ block.shopify_attributes }}>
+      <div class="iwao-trust-bar__left">
+        {%- if section.settings.phone_text != blank -%}
+          <a class="iwao-trust-bar__phone" href="{{ section.settings.phone_url }}" aria-label="{{ section.settings.phone_text }}">
             <div class="iwao-trust-bar__icon">
-              {{ block.settings.icon }}
+              {{ section.settings.phone_icon }}
             </div>
-            <span>{{ block.settings.text }}</span>
-          </span>
-          {%- if forloop.last == false -%}
-            <span class="iwao-trust-bar__divider" aria-hidden="true"></span>
+            <span>{{ section.settings.phone_text }}</span>
+          </a>
+        {%- endif -%}
+
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'link_list' -%}
+            <ul class="iwao-trust-bar__menu" {{ block.shopify_attributes }}>
+              {%- for link in linklists[block.settings.menu].links -%}
+                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+              {%- endfor -%}
+            </ul>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      <div class="iwao-trust-bar__center iwao-trust-bar__usp-wrap">
+        {%- assign center_items = 0 -%}
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'usp' or block.type == 'text' -%}
+            {%- if center_items > 0 -%}
+              <span class="iwao-trust-bar__divider" aria-hidden="true"></span>
+            {%- endif -%}
+            
+            <span class="iwao-trust-bar__item" {{ block.shopify_attributes }}>
+              {%- if block.type == 'usp' -%}
+                <div class="iwao-trust-bar__icon">
+                  {{ block.settings.icon }}
+                </div>
+              {%- endif -%}
+              <span>{{ block.settings.text }}</span>
+            </span>
+            {%- assign center_items = center_items | plus: 1 -%}
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      <div class="iwao-trust-bar__right">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'language_country' -%}
+            <div class="iwao-trust-bar__country" {{ block.shopify_attributes }}>
+              {% liquid
+                if block.settings.show_language_selector
+                  render 'language-selector', plain: true, class: 'flex items-center', form_id: block.id
+                endif
+                if block.settings.show_country_selector
+                  render 'country-selector', plain: true, class: 'flex items-center', form_id: block.id
+                endif
+              %}
+            </div>
           {%- endif -%}
         {%- endfor -%}
       </div>
@@ -263,15 +347,26 @@
         <div class="iwao-trust-bar__track">
           {%- for i in (1..2) -%} <!-- Looped twice for infinite marquee effect -->
             <div class="iwao-trust-bar__group">
+              {%- assign center_items_mobile = 0 -%}
               {%- for block in section.blocks -%}
-                <span class="iwao-trust-bar__item">
-                  <div class="iwao-trust-bar__icon">
-                    {{ block.settings.icon }}
-                  </div>
-                  <span>{{ block.settings.text }}</span>
-                </span>
-                <span class="iwao-trust-bar__divider" aria-hidden="true"></span>
+                {%- if block.type == 'usp' or block.type == 'text' -%}
+                  {%- if center_items_mobile > 0 -%}
+                    <span class="iwao-trust-bar__divider" aria-hidden="true"></span>
+                  {%- endif -%}
+                  <span class="iwao-trust-bar__item">
+                    {%- if block.type == 'usp' -%}
+                      <div class="iwao-trust-bar__icon">
+                        {{ block.settings.icon }}
+                      </div>
+                    {%- endif -%}
+                    <span>{{ block.settings.text }}</span>
+                  </span>
+                  {%- assign center_items_mobile = center_items_mobile | plus: 1 -%}
+                {%- endif -%}
               {%- endfor -%}
+              {%- if center_items_mobile > 0 -%}
+                <span class="iwao-trust-bar__divider" aria-hidden="true"></span>
+              {%- endif -%}
             </div>
           {%- endfor -%}
         </div>
@@ -371,6 +466,49 @@
           "id": "icon",
           "label": "Icon (SVG)",
           "info": "Paste the raw SVG code here"
+        }
+      ]
+    },
+    {
+      "type": "link_list",
+      "name": "Menu",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "link_list",
+          "id": "menu",
+          "label": "Menu"
+        }
+      ]
+    },
+    {
+      "type": "language_country",
+      "name": "Language / Country",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "show_language_selector",
+          "label": "Show language",
+          "default": true
+        },
+        {
+          "type": "checkbox",
+          "id": "show_country_selector",
+          "label": "Show country",
+          "default": true
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Text",
+          "default": "Welcome to our store"
         }
       ]
     }
