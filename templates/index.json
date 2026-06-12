@@ -171,8 +171,8 @@
             "button_icon": "none",
             "show_payment_icons": true,
             "show_trustpilot": true,
-            "trustpilot_rating": "4.5★",
-            "trustpilot_reviews": "Verified Reviews"
+            "trustpilot_rating": "",
+            "trustpilot_reviews": "4,5 stjerner | Baseret på +110 anmeldelser"
           }
         }
       },
