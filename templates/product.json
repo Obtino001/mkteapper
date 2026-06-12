@@ -267,6 +267,8 @@
       "type": "trustpilot-badge",
       "name": "Trustpilot Badge",
       "settings": {
+        "stars_image": "shopify://shop_images/t-stars.svg",
+        "star_height": 24,
         "badge_text": "4,5 stjerner | Baseret på +110 anmeldelser",
         "badge_link": "",
         "alignment": "center",
