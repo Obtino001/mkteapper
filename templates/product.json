@@ -24,30 +24,10 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "custom_trustpilot_XfydpY": {
-          "type": "custom-trustpilot",
-          "settings": {
-            "official_code": "",
-            "trust_image": "shopify://shop_images/t-stars.svg",
-            "trust_text": "<p> 4.4 / 5 – 588 reviews</p>",
-            "trust_link": "https://dk.trustpilot.com/review/mktaepper.dk?utm_medium=trustbox&utm_source=MicroReviewCount"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
             "heading_size": "h2"
-          }
-        },
-        "meta": {
-          "type": "meta",
-          "disabled": true,
-          "settings": {
-            "link_color": "#1d349a",
-            "show_vendor": true,
-            "show_product_type": true,
-            "show_sku": false,
-            "show_barcode": false
           }
         },
         "price": {
@@ -236,9 +216,7 @@
         }
       },
       "block_order": [
-        "custom_trustpilot_XfydpY",
         "title",
-        "meta",
         "price",
         "klarna_on_site_messaging_app_block_fzhTDC",
         "icon_with_text",
