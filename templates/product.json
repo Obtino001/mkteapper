@@ -263,6 +263,17 @@
         "padding_bottom": 60
       }
     },
+    "trustpilot_badge_wetrKj": {
+      "type": "trustpilot-badge",
+      "name": "Trustpilot Badge",
+      "settings": {
+        "badge_text": "4,5 stjerner | Baseret på +110 anmeldelser",
+        "badge_link": "",
+        "alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "image_with_text_ndXRmK": {
       "type": "image-with-text",
       "blocks": {
@@ -555,6 +566,7 @@
   "order": [
     "breadcrumbs",
     "main",
+    "trustpilot_badge_wetrKj",
     "image_with_text_ndXRmK",
     "image_with_text_kqXfRQ",
     "related-products",
