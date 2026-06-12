@@ -1,0 +1,355 @@
+{% if section.settings.show_section %}
+<style>
+  .rug-size-guide-wrapper {
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    background-color: {{ section.settings.background_color }};
+  }
+  .rug-size-guide__title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    margin-bottom: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color: rgb(var(--color-foreground));
+  }
+  .rug-size-guide__subtitle {
+    font-size: 1.1rem;
+    color: rgba(var(--color-foreground), 0.7);
+    margin-bottom: 3rem;
+    max-width: 600px;
+    margin-inline: auto;
+  }
+  .rug-size-guide__tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    border-bottom: 1px solid rgba(var(--color-foreground), 0.1);
+    padding-bottom: 1rem;
+  }
+  .rug-size-guide__tab {
+    background: none;
+    border: none;
+    font-size: 1.1rem;
+    color: rgba(var(--color-foreground), 0.6);
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    position: relative;
+    transition: color 0.3s ease;
+    font-weight: 500;
+  }
+  .rug-size-guide__tab:hover,
+  .rug-size-guide__tab.active {
+    color: rgb(var(--color-foreground));
+  }
+  .rug-size-guide__tab::after {
+    content: '';
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(var(--color-foreground));
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+  .rug-size-guide__tab.active::after {
+    transform: scaleX(1);
+  }
+  .rug-size-guide__pane {
+    display: none;
+    animation: fadeIn 0.5s ease;
+  }
+  .rug-size-guide__pane.active {
+    display: block;
+  }
+  .rug-size-guide__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  .rug-guide-card {
+    background: rgb(var(--color-background));
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(var(--color-foreground), 0.03);
+  }
+  .rug-guide-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  }
+  .rug-guide-card__image-wrap {
+    aspect-ratio: 4/3;
+    background: rgba(var(--color-foreground), 0.03);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .rug-guide-card__image-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+  }
+  .rug-guide-card:hover .rug-guide-card__image-wrap img {
+    transform: scale(1.05);
+  }
+  .rug-guide-card__placeholder {
+    width: 100%;
+    height: 100%;
+    fill: rgba(var(--color-foreground), 0.05);
+  }
+  .rug-guide-card__content {
+    padding: 2rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .rug-guide-card__size {
+    display: inline-block;
+    background: rgb(var(--color-foreground));
+    color: rgb(var(--color-background));
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    align-self: flex-start;
+  }
+  .rug-guide-card__title {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  .rug-guide-card__desc {
+    font-size: 0.95rem;
+    color: rgba(var(--color-foreground), 0.7);
+    line-height: 1.6;
+    margin: 0;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .rug-guide-card__size-overlay {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background: rgba(255,255,255,0.9);
+    backdrop-filter: blur(5px);
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #000;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border: 1px solid rgba(255,255,255,0.5);
+  }
+
+  @media screen and (max-width: 768px) {
+    .rug-size-guide__tabs {
+      overflow-x: auto;
+      justify-content: flex-start;
+      padding-bottom: 15px;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .rug-size-guide__tabs::-webkit-scrollbar {
+      display: none;
+    }
+    .rug-size-guide__tab {
+      white-space: nowrap;
+    }
+  }
+</style>
+
+<div class="rug-size-guide-wrapper section-{{ section.id }}">
+  <div class="page-width">
+    {% if section.settings.title != blank %}
+      <h2 class="rug-size-guide__title text-center">{{ section.settings.title }}</h2>
+    {% endif %}
+    {% if section.settings.subtitle != blank %}
+      <p class="rug-size-guide__subtitle text-center">{{ section.settings.subtitle }}</p>
+    {% endif %}
+
+    <div class="rug-size-guide__tabs-container">
+      <div class="rug-size-guide__tabs" role="tablist">
+        {%- assign rooms = "Living Room,Dining Room,Bedroom" | split: "," -%}
+        {%- for room in rooms -%}
+          {%- assign room_handle = room | downcase | replace: ' ', '-' -%}
+          <button class="rug-size-guide__tab {% if forloop.first %}active{% endif %}" role="tab" data-tab="{{ room_handle }}">{{ room }}</button>
+        {%- endfor -%}
+      </div>
+
+      <div class="rug-size-guide__content">
+        {%- for room in rooms -%}
+          {%- assign room_handle = room | downcase | replace: ' ', '-' -%}
+          <div class="rug-size-guide__pane {% if forloop.first %}active{% endif %}" id="tab-{{ room_handle }}" role="tabpanel">
+            <div class="rug-size-guide__grid">
+              {%- assign has_blocks = false -%}
+              {%- for block in section.blocks -%}
+                {%- if block.settings.room_type == room_handle -%}
+                  {%- assign has_blocks = true -%}
+                  <div class="rug-guide-card" {{ block.shopify_attributes }}>
+                    <div class="rug-guide-card__image-wrap">
+                      {%- if block.settings.image != blank -%}
+                        {{ block.settings.image | image_url: width: 800 | image_tag: loading: 'lazy' }}
+                      {%- else -%}
+                        {{ 'image' | placeholder_svg_tag: 'rug-guide-card__placeholder' }}
+                      {%- endif -%}
+                      <div class="rug-guide-card__size-overlay">{{ block.settings.size_text }}</div>
+                    </div>
+                    <div class="rug-guide-card__content">
+                      <span class="rug-guide-card__size">{{ block.settings.size_text }}</span>
+                      <h3 class="rug-guide-card__title">{{ block.settings.title }}</h3>
+                      <div class="rug-guide-card__desc">{{ block.settings.description }}</div>
+                    </div>
+                  </div>
+                {%- endif -%}
+              {%- endfor -%}
+              
+              {%- if has_blocks == false -%}
+                <div class="text-center w-full" style="grid-column: 1 / -1; padding: 2rem;">
+                  <p>No sizes added for {{ room }} yet. Add blocks in the theme editor.</p>
+                </div>
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const tabs = document.querySelectorAll('.rug-size-guide-wrapper.section-{{ section.id }} .rug-size-guide__tab');
+    const panes = document.querySelectorAll('.rug-size-guide-wrapper.section-{{ section.id }} .rug-size-guide__pane');
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const targetTab = tab.getAttribute('data-tab');
+        
+        tabs.forEach(t => t.classList.remove('active'));
+        panes.forEach(p => p.classList.remove('active'));
+        
+        tab.classList.add('active');
+        document.getElementById(`tab-${targetTab}`).classList.add('active');
+      });
+    });
+  });
+</script>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Rug Size Guide",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_section",
+      "label": "Show Size Guide",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading",
+      "default": "Find The Perfect Size"
+    },
+    {
+      "type": "textarea",
+      "id": "subtitle",
+      "label": "Subheading",
+      "default": "Use our premium guide to choose the right rug dimensions for your space."
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "size_guide_item",
+      "name": "Size Option",
+      "settings": [
+        {
+          "type": "select",
+          "id": "room_type",
+          "label": "Room",
+          "options": [
+            { "value": "living-room", "label": "Living Room" },
+            { "value": "dining-room", "label": "Dining Room" },
+            { "value": "bedroom", "label": "Bedroom" }
+          ],
+          "default": "living-room"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Layout Image"
+        },
+        {
+          "type": "text",
+          "id": "size_text",
+          "label": "Size (e.g. 160x230 cm)",
+          "default": "160x230 cm"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Perfect for average rooms"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Description",
+          "default": "<p>A 160x230 cm rug is great for defining the seating area in an average-sized living room. Place the front legs of your sofa on the rug.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Rug Size Guide",
+      "blocks": [
+        { "type": "size_guide_item", "settings": { "room_type": "living-room", "size_text": "140x200 cm", "title": "Compact Seating" } },
+        { "type": "size_guide_item", "settings": { "room_type": "living-room", "size_text": "160x230 cm", "title": "Standard Seating" } },
+        { "type": "size_guide_item", "settings": { "room_type": "living-room", "size_text": "200x300 cm", "title": "Large Seating" } },
+        { "type": "size_guide_item", "settings": { "room_type": "dining-room", "size_text": "200x300 cm", "title": "Standard Dining" } },
+        { "type": "size_guide_item", "settings": { "room_type": "bedroom", "size_text": "160x230 cm", "title": "Queen Bed" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
