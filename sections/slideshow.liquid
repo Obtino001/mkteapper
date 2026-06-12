@@ -205,10 +205,9 @@
                     class="block slideshow__trustpilot-wrapper"
                   >
                     <div class="slideshow__trustpilot" style="display: inline-flex; align-items: center; background: rgba(0, 0, 0, 0.4); border-radius: 50px; padding: 6px 12px; gap: 8px; color: white; font-family: inherit; font-size: 14px; backdrop-filter: blur(4px); margin-top: 15px; justify-content: {% if text_alignment == 'center' %}center{% elsif text_alignment == 'right' %}flex-end{% else %}flex-start{% endif %};">
-                      <svg width="20" height="20" viewBox="0 0 31 31" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#00B67A" d="M30.141707 11.07005H18.63164L15.076408.177071l-3.566342 10.892977L0 11.059002l9.321376 6.739063-3.566343 10.88193 9.321375-6.728016 9.310266 6.728016-3.555233-10.88193 9.310266-6.728016z"></path>
-                      </svg>
-                      <span>Trustpilot</span>
+                    <div class="c-trustpilot-img">
+                    <img src="//www.mktaepper.dk/cdn/shop/files/t-stars.svg?v=1770382825&amp;width=200" alt="&lt;p&gt;4,5 stjerner | Baseret på +110 anmeldelser&lt;/p&gt;">
+                  </div>
                       <strong>{{ block.settings.trustpilot_rating }}</strong>
                       <span>{{ block.settings.trustpilot_reviews }}</span>
                     </div>
