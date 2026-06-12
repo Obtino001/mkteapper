@@ -1,0 +1,160 @@
+{%- style -%}
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+  }
+
+  @media screen and (min-width: 750px) {
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+
+  .tp-badge-wrapper {
+    display: flex;
+    justify-content: {{ section.settings.alignment }};
+    width: 100%;
+  }
+
+  .tp-badge-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background-color: rgba(0, 0, 0, 0.35); /* Semi-transparent dark background */
+    backdrop-filter: blur(4px); /* Slight blur for glass effect */
+    -webkit-backdrop-filter: blur(4px);
+    padding: 8px 16px 8px 12px;
+    border-radius: 50px;
+    color: #ffffff;
+    font-family: var(--font-body-family), sans-serif;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .tp-badge-pill:hover {
+    background-color: rgba(0, 0, 0, 0.45);
+  }
+
+  .tp-stars {
+    display: flex;
+    gap: 2px;
+  }
+
+  .tp-star-box {
+    width: 22px;
+    height: 22px;
+    background-color: #00b67a; /* Trustpilot Green */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+  }
+
+  /* Half-star background gradient */
+  .tp-star-box.tp-half {
+    background: linear-gradient(to right, #00b67a 50%, #dcdce6 50%);
+  }
+
+  .tp-star-box svg {
+    width: 14px;
+    height: 14px;
+    fill: #ffffff;
+  }
+
+  .tp-badge-text {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    line-height: 1;
+    padding-top: 1px;
+  }
+{%- endstyle -%}
+
+<div class="tp-badge-wrapper section-{{ section.id }}-padding">
+  <a href="{{ section.settings.badge_link | default: '#' }}" class="tp-badge-pill">
+    <div class="tp-stars">
+      {% for i in (1..4) %}
+        <div class="tp-star-box">
+          <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 38.013l73.468 148.86 164.266 23.873-118.867 115.864 28.064 163.606L256 412.98l-146.931 77.236 28.064-163.606L18.266 210.746l164.266-23.873z"/></svg>
+        </div>
+      {% endfor %}
+      
+      <div class="tp-star-box tp-half">
+        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 38.013l73.468 148.86 164.266 23.873-118.867 115.864 28.064 163.606L256 412.98l-146.931 77.236 28.064-163.606L18.266 210.746l164.266-23.873z"/></svg>
+      </div>
+    </div>
+    <div class="tp-badge-text">
+      {{ section.settings.badge_text }}
+    </div>
+  </a>
+</div>
+
+{% schema %}
+{
+  "name": "Trustpilot Badge",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "badge_text",
+      "label": "Badge Text",
+      "default": "4,5 stjerner | Baseret på +110 anmeldelser"
+    },
+    {
+      "type": "url",
+      "id": "badge_link",
+      "label": "Trustpilot Link (Optional)"
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": "Alignment",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "flex-end",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Padding settings"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 36
+    }
+  ],
+  "presets": [
+    {
+      "name": "Trustpilot Badge"
+    }
+  ]
+}
+{% endschema %}
