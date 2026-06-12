@@ -8,6 +8,7 @@
   @param {string} [price_regular_class] - CSS class added to the price regular element
   @param {string} [price_sale_class] - CSS class added to the price sale element
   @param {string} [alignment] - Alignment content for price element
+  @param {boolean} [hide_from] - Hide the "From" prefix when product.price_varies
 
   @example
   {% render 'price', product: product %}
@@ -45,7 +46,7 @@
     assign money_price_min = price_min | money_with_currency
     assign money_price_max = price_max | money_with_currency
   endif
-  if target == product and product.price_varies
+  if target == product and product.price_varies and hide_from != true
     assign money_price = 'products.product.price.from_price_html' | t: price: money_price
   endif
 -%}
