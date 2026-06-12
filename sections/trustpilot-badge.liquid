@@ -21,45 +21,17 @@
     display: inline-flex;
     align-items: center;
     gap: 12px;
-    background-color: rgba(0, 0, 0, 0.35); /* Semi-transparent dark background */
-    backdrop-filter: blur(4px); /* Slight blur for glass effect */
-    -webkit-backdrop-filter: blur(4px);
-    padding: 8px 16px 8px 12px;
-    border-radius: 50px;
-    color: #ffffff;
+    padding: 8px 0; /* Removed background & blur, so horizontal padding is reduced */
+    color: rgb(var(--color-foreground)); /* Adapts to your theme's text color */
     font-family: var(--font-body-family), sans-serif;
     text-decoration: none;
-    transition: background-color 0.3s ease;
   }
 
-  .tp-badge-pill:hover {
-    background-color: rgba(0, 0, 0, 0.45);
-  }
-
-  .tp-stars {
-    display: flex;
-    gap: 2px;
-  }
-
-  .tp-star-box {
-    width: 22px;
-    height: 22px;
-    background-color: #00b67a; /* Trustpilot Green */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 2px;
-  }
-
-  /* Half-star background gradient */
-  .tp-star-box.tp-half {
-    background: linear-gradient(to right, #00b67a 50%, #dcdce6 50%);
-  }
-
-  .tp-star-box svg {
-    width: 14px;
-    height: 14px;
-    fill: #ffffff;
+  .tp-stars-img {
+    height: {{ section.settings.star_height }}px;
+    width: auto;
+    object-fit: contain;
+    display: block;
   }
 
   .tp-badge-text {
@@ -73,17 +45,11 @@
 
 <div class="tp-badge-wrapper section-{{ section.id }}-padding">
   <a href="{{ section.settings.badge_link | default: '#' }}" class="tp-badge-pill">
-    <div class="tp-stars">
-      {% for i in (1..4) %}
-        <div class="tp-star-box">
-          <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 38.013l73.468 148.86 164.266 23.873-118.867 115.864 28.064 163.606L256 412.98l-146.931 77.236 28.064-163.606L18.266 210.746l164.266-23.873z"/></svg>
-        </div>
-      {% endfor %}
-      
-      <div class="tp-star-box tp-half">
-        <svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 38.013l73.468 148.86 164.266 23.873-118.867 115.864 28.064 163.606L256 412.98l-146.931 77.236 28.064-163.606L18.266 210.746l164.266-23.873z"/></svg>
-      </div>
-    </div>
+    
+    {%- if section.settings.stars_image != blank -%}
+      {{ section.settings.stars_image | image_url: height: 100 | image_tag: class: 'tp-stars-img', loading: 'lazy' }}
+    {%- endif -%}
+
     <div class="tp-badge-text">
       {{ section.settings.badge_text }}
     </div>
@@ -92,9 +58,24 @@
 
 {% schema %}
 {
-  "name": "Trustpilot Badge",
+  "name": "Custom Review Badge",
   "tag": "section",
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "stars_image",
+      "label": "Stars Image Upload"
+    },
+    {
+      "type": "range",
+      "id": "star_height",
+      "min": 10,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "label": "Star Image Height",
+      "default": 24
+    },
     {
       "type": "text",
       "id": "badge_text",
@@ -104,7 +85,7 @@
     {
       "type": "url",
       "id": "badge_link",
-      "label": "Trustpilot Link (Optional)"
+      "label": "Link (Optional)"
     },
     {
       "type": "select",
@@ -153,7 +134,7 @@
   ],
   "presets": [
     {
-      "name": "Trustpilot Badge"
+      "name": "Custom Review Badge"
     }
   ]
 }
