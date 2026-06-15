@@ -186,7 +186,7 @@
         "show_controls": true,
         "autoplay": false,
         "autoplay_delay": 3,
-        "show_text_below": false,
+        "show_text_below": true,
         "text_alignment_mobile": "center",
         "accessibility_info": "Slideshow about our brand"
       }
