@@ -170,7 +170,7 @@
             "button_style": "btn--primary",
             "button_icon": "none",
             "show_payment_icons": true,
-            "show_trustpilot": true,
+            "show_trustpilot": false,
             "trustpilot_rating": "",
             "trustpilot_reviews": "4,5 stjerner | Baseret på +550 anmeldelser"
           }
@@ -186,7 +186,7 @@
         "show_controls": true,
         "autoplay": false,
         "autoplay_delay": 3,
-        "show_text_below": true,
+        "show_text_below": false,
         "text_alignment_mobile": "center",
         "accessibility_info": "Slideshow about our brand"
       }
