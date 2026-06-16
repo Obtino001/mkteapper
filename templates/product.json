@@ -265,6 +265,7 @@
     },
     "trustpilot_badge_wetrKj": {
       "type": "trustpilot-badge",
+      "disabled": true,
       "name": "Trustpilot Badge",
       "settings": {
         "stars_image": "shopify://shop_images/t-stars.svg",
