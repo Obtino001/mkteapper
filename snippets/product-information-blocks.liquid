@@ -437,7 +437,7 @@
           </div>
         {%- when 'shipping' -%}
           {%- if block.settings.deliver_days != blank -%}
-            <div class="{{ block_classes }}" {{ block.shopify_attributes }}>
+            <div class="{{ block_classes }} new-icon-no-wrap" {{ block.shopify_attributes }}>
               <ul class="icon-with-text icon-with-text--vertical list-unstyled">
                 <li class="icon-with-text__item">
                   {%- render 'icon-truck' -%}
