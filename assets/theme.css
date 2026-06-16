@@ -2560,7 +2560,7 @@ button svg,
 .btn:not(.btn--plain, .btn--underline, .btn--link, .btn--inherit) {
   z-index: 1;
   overflow: hidden;
-  max-width: 85%;
+  max-width: 100%;
 }
 .btn:not(.btn--plain, .btn--underline, .btn--link, .btn--inherit) .btn__text {
   overflow: hidden;
