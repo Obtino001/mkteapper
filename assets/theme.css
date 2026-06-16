@@ -8652,3 +8652,23 @@ body.search-template #MainContent,
 }
 
 
+.icon-no-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 2rem;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+
+.icon-no-wrap::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.icon-no-wrap .icon-with-text__item {
+  display: inline-flex;
+  align-items: center;
+  flex: 0 0 auto;
+  gap: 0.5rem;
+}
