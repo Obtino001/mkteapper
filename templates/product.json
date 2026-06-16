@@ -79,7 +79,7 @@
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
-            "picker_type": "dropdown",
+            "picker_type": "button",
             "swatch_type": "shopify_swatch",
             "swatch_style": "square",
             "swatch_size": 32,
