@@ -693,7 +693,7 @@
             "button_label": "Shop her",
             "button_style": "btn--secondary",
             "button_icon": "none",
-            "show_payment_icons": false
+            "show_payment_icons": true
           }
         },
         "collection_j3wCpz": {
@@ -706,7 +706,7 @@
             "button_label": "Shop her",
             "button_style": "btn--primary",
             "button_icon": "none",
-            "show_payment_icons": false
+            "show_payment_icons": true
           }
         }
       },
