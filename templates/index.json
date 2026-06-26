@@ -679,7 +679,8 @@
             "text": "<p>Hygge & varme </p>",
             "button_label": "Shop her",
             "button_style": "btn--primary",
-            "button_icon": "none"
+            "button_icon": "none",
+            "show_payment_icons": true
           }
         },
         "collection_kXyTe3": {
@@ -691,7 +692,8 @@
             "text": "<p>Stilfuldt og klassisk</p>",
             "button_label": "Shop her",
             "button_style": "btn--secondary",
-            "button_icon": "none"
+            "button_icon": "none",
+            "show_payment_icons": false
           }
         },
         "collection_j3wCpz": {
@@ -703,7 +705,8 @@
             "text": "<p>Moderne Elegance</p>",
             "button_label": "Shop her",
             "button_style": "btn--primary",
-            "button_icon": "none"
+            "button_icon": "none",
+            "show_payment_icons": false
           }
         }
       },
