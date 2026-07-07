@@ -49,7 +49,7 @@
         >
           <span class="f-country-flags f-country-flags--{{ localization.country.iso_code }}" style="--background-image: url({{ localization.country | image_url: width: 20 }})"></span>
           {{ localization.country.name }} 
-          {% render 'icon-caret-up' %}
+          {% render 'icon-caret-down' %}
         </button>
         <ul class="disclosure-list v-scrollable text-left">
           {%- for country in localization.available_countries -%}

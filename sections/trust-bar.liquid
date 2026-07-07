@@ -4,11 +4,10 @@
     min-height: 38px;
     background: {{ section.settings.bg_color }};
     color: {{ section.settings.text_color }};
-    overflow: hidden;
     border-bottom: 1px solid {{ section.settings.text_color | color_modify: 'alpha', 0.08 }};
     font-family: inherit;
     position: relative;
-    z-index: 2;
+    z-index: 99;
     box-sizing: border-box;
   }
 
