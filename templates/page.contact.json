@@ -46,19 +46,19 @@
             "icon_color_1": "#1d349a",
             "icon_heading_1": "Hovedkontor",
             "icon_heading_size_1": "h5",
-            "icon_text_1": "<p>Østre alle 36, 4200 Slagelse, Danmark.</p>",
+            "icon_text_1": "<p>Østre alle 36, 4200 Slagelse, Danmark.</p>",
             "icon_vertical_alignment_1": "start",
             "icon_2": "phone",
             "icon_width_2": 28,
             "icon_color_2": "#1d349a",
-            "icon_heading_2": "Email Us",
+            "icon_heading_2": "E-mail",
             "icon_heading_size_2": "h5",
             "icon_text_2": "<p>info@mktaepper.dk</p>",
             "icon_vertical_alignment_2": "start",
             "icon_3": "clock",
             "icon_width_3": 28,
             "icon_color_3": "#1d349a",
-            "icon_heading_3": "Working Hour",
+            "icon_heading_3": "Åbningstider",
             "icon_heading_size_3": "h5",
             "icon_text_3": "<p>Mandag-Fredag fra kl.10-14<br/><br/></p>",
             "icon_vertical_alignment_3": "start",
@@ -72,13 +72,13 @@
           "type": "custom_field",
           "settings": {
             "field_type": "phone",
-            "heading": "Phone Number",
-            "placeholder": "Phone Number",
+            "heading": "Telefonnummer",
+            "placeholder": "Telefonnummer",
             "required": true,
             "full_width": false,
             "select_options": "",
-            "checkbox_checked_value": "Yes",
-            "checkbox_uncheck_value": "No",
+            "checkbox_checked_value": "Ja",
+            "checkbox_uncheck_value": "Nej",
             "radio_options": ""
           }
         },
@@ -86,13 +86,13 @@
           "type": "custom_field",
           "settings": {
             "field_type": "text",
-            "heading": "Order Number",
-            "placeholder": "Order Number",
+            "heading": "Ordrenummer",
+            "placeholder": "Ordrenummer",
             "required": false,
             "full_width": false,
             "select_options": "",
-            "checkbox_checked_value": "Yes",
-            "checkbox_uncheck_value": "No",
+            "checkbox_checked_value": "Ja",
+            "checkbox_uncheck_value": "Nej",
             "radio_options": ""
           }
         },
@@ -101,13 +101,13 @@
           "disabled": true,
           "settings": {
             "field_type": "select",
-            "heading": "Country",
+            "heading": "Land",
             "placeholder": "",
             "required": false,
             "full_width": true,
             "select_options": "",
-            "checkbox_checked_value": "Yes",
-            "checkbox_uncheck_value": "No",
+            "checkbox_checked_value": "Ja",
+            "checkbox_uncheck_value": "Nej",
             "radio_options": ""
           }
         }
@@ -141,7 +141,7 @@
           "type": "text",
           "settings": {
             "text_link": "",
-            "text": "Fast Delivery",
+            "text": "Hurtig levering",
             "text_size": "h4",
             "text_opacity": 100,
             "use_custom_color": false,
@@ -152,7 +152,7 @@
           "type": "text",
           "settings": {
             "text_link": "",
-            "text": "30 Days Free Returns",
+            "text": "30 dages gratis retur",
             "text_size": "h4",
             "text_opacity": 100,
             "use_custom_color": false,
@@ -163,7 +163,7 @@
           "type": "text",
           "settings": {
             "text_link": "",
-            "text": "Secure Payment",
+            "text": "Sikker betaling",
             "text_size": "h4",
             "text_opacity": 100,
             "use_custom_color": false,
@@ -174,7 +174,7 @@
           "type": "text",
           "settings": {
             "text_link": "",
-            "text": "24/7 Customer Support",
+            "text": "24/7 kundesupport",
             "text_size": "h4",
             "text_opacity": 100,
             "use_custom_color": false,
@@ -185,7 +185,7 @@
           "type": "text",
           "settings": {
             "text_link": "",
-            "text": "Sustainable Materials",
+            "text": "Bæredygtige materialer",
             "text_size": "h4",
             "text_opacity": 100,
             "use_custom_color": false,
