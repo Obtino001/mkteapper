@@ -132,6 +132,11 @@
     color: {{ section.settings.text_color }};
   }
 
+  .iwao-trust-bar-{{ section.id }} .disclosure-list__item:hover {
+    color: rgb(var(--color-foreground));
+    opacity: 0.8;
+  }
+
   .iwao-trust-bar-{{ section.id }} .iwao-trust-bar__mobile { display: none; }
 
   @media (max-width: 1180px) {
