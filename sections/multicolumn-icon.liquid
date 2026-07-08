@@ -172,37 +172,43 @@
                   class="multicolumn-card multicolumn-card--image-icon multicolumn-card--layout-{{ section.settings.image_position }} flex gap-x-3 {% if image_position == 'top' %} items-{{ section.settings.content_alignment | replace: 'left', 'start' | replace: 'right', 'end' }}{% if auto_layout_tablet %} flex-col lg:flex-row xl:flex-col{% else %} flex-col{% endif %}{% endif %} text-{{ section.settings.content_alignment }} color-{{ section.settings.card_color_scheme }}{% if color_scheme_inherit %} color-scheme-inherit{% else %} blocks-radius{% endif %} h-full"
                   style="--img-max: {{ block.settings.max_width }}px;--img-max-mb: {{ block.settings.max_width_mb }}px;"
                 >
-                  <div class="multicolumn-card__image shrink-0">
-                    <motion-element
-                      class="block w-full h-full"
-                      data-motion="zoom-out-sm"
-                      style="--aspect-ratio: {{ block.settings.image.aspect_ratio | default: '1' }};"
-                    >
-                      {%- if block.settings.image != blank -%}
-                        {%- liquid
-                          assign alt = block.settings.image.alt | default: block.settings.title | escape
-                        -%}
-                        {%- capture image_sizes -%}(min-width: 768px) {{ block.settings.max_width }}px, {{ block.settings.max_width_mb }}px{%- endcapture -%}
-                        <picture class="card-media__media media-wrapper">
-                          {{
-                            block.settings.image
-                            | image_url: width: 1100
-                            | image_tag:
-                              loading: 'lazy',
-                              class: 'motion-reduce absolute inset-0 w-full h-full',
-                              widths: '40, 60, 80, 120, 165, 360, 535, 750, 940, 1100',
-                              is: 'image-lazy',
-                              sizes: image_sizes,
-                              alt: alt
-                          }}
-                        </picture>
-                      {%- elsif block.settings.icon != 'none' -%}
-                        {%- render 'icons', icon: block.settings.icon -%}
-                      {%- else -%}
-                        {{ 'image' | placeholder_svg_tag: 'placeholder-svg blocks-radius-sm' }}
-                      {%- endif -%}
-                    </motion-element>
-                  </div>
+                  {%- liquid
+                    assign has_media = false
+                    if block.settings.image != blank or block.settings.icon != 'none'
+                      assign has_media = true
+                    endif
+                  -%}
+                  {%- if has_media -%}
+                    <div class="multicolumn-card__image shrink-0">
+                      <motion-element
+                        class="block w-full h-full"
+                        data-motion="zoom-out-sm"
+                        style="--aspect-ratio: {{ block.settings.image.aspect_ratio | default: '1' }};"
+                      >
+                        {%- if block.settings.image != blank -%}
+                          {%- liquid
+                            assign alt = block.settings.image.alt | default: block.settings.title | escape
+                          -%}
+                          {%- capture image_sizes -%}(min-width: 768px) {{ block.settings.max_width }}px, {{ block.settings.max_width_mb }}px{%- endcapture -%}
+                          <picture class="card-media__media media-wrapper">
+                            {{
+                              block.settings.image
+                              | image_url: width: 1100
+                              | image_tag:
+                                loading: 'lazy',
+                                class: 'motion-reduce absolute inset-0 w-full h-full',
+                                widths: '40, 60, 80, 120, 165, 360, 535, 750, 940, 1100',
+                                is: 'image-lazy',
+                                sizes: image_sizes,
+                                alt: alt
+                            }}
+                          </picture>
+                        {%- elsif block.settings.icon != 'none' -%}
+                          {%- render 'icons', icon: block.settings.icon -%}
+                        {%- endif -%}
+                      </motion-element>
+                    </div>
+                  {%- endif -%}
                   <div class="multicolumn-card__info rich-text rich-text--tight flex-1 flex flex-col items-{{ section.settings.content_alignment | replace: 'left', 'start' | replace: 'right', 'end' }}">
                     {%- if block.settings.show_payment_icons -%}
                       <div class="multicolumn-card__payment mb-2 w-full">

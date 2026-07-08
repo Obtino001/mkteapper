@@ -433,7 +433,7 @@
         "column_30days": {
           "type": "column",
           "settings": {
-            "icon": "calendar",
+            "icon": "none",
             "max_width": 40,
             "max_width_mb": 40,
             "title": "<strong>Prøv i 30 dage</strong>",
