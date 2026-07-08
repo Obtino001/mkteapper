@@ -230,6 +230,11 @@
                         %}
                       </div>
                     {%- endif -%}
+                    {%- if block.settings.show_payment_icons -%}
+                      <div class="multicolumn-card__payment mt-2">
+                        {% render 'payment-icons' %}
+                      </div>
+                    {%- endif -%}
                   </div>
                 </div>
                 {% if section.settings.show_divider_col %}
@@ -1280,6 +1285,12 @@
           "type": "url",
           "id": "button_link",
           "label": "t:general.button.button_link.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_payment_icons",
+          "label": "Show payment icons",
+          "default": false
         },
         {
           "type": "select",
