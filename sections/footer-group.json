@@ -1,1 +1,178 @@
-{"name":"t:sections.footer.name","type":"footer","sections":{"footer":{"type":"footer","blocks":{"image_text_gMRUnE":{"type":"image_text","settings":{"block_width":25,"layout":"image_top","heading":"","heading_size":"h6","image":"shopify:\/\/shop_images\/download-removebg-preview_1.png","image_width":150,"image_width_mobile":100,"overlay_opacity":70,"text":"<p>Besøg vores showroom og oplev en del af vores store tæppeudvalg, samt få professionel vejledning ift. valg af dit nye tæppe!<br\/><br\/><\/p>","button_label":"","button_link":"","button_style":"btn--underline","color_scheme":"scheme-inverse","content_alignment":"left","open_default":false,"show_divider":false}},"newsletter_3qCrWc":{"type":"newsletter","disabled":true,"settings":{"block_width":55,"heading":"NYHEDSBREV","heading_size":"h3","newsletter_description":"<p>Tilmeld dig vores nyhedsbrev og få besked om nye varer, udsalg samt eksklusive rabatter.<\/p>","newsletter_term":"","newsletter_text_alignment":"left","form_width":465,"button_style":"btn--primary","button_icon":"none","order_first":true}},"menu_DEKGYP":{"type":"menu","settings":{"block_width":15,"heading":"INFO","heading_size":"h6","menu":"help-support","open_default":false,"show_divider":false}},"menu_4eCrBB":{"type":"menu","settings":{"block_width":15,"heading":"GUIDES & INSPIRATION","heading_size":"h6","menu":"information","open_default":false,"show_divider":false}},"menu_6cjHfA":{"type":"menu","settings":{"block_width":15,"heading":"SHOP","heading_size":"h6","menu":"footer","open_default":false,"show_divider":false}},"contact_information_wA6FRf":{"type":"contact_information","settings":{"block_width":25,"heading":"KONTAKTOPLYSNINGER","heading_size":"h6","address":"Østre alle 36, 4200 Slagelse, Danmark.","working_hours":"Mandag-fredag ​​fra kl. 10-14","email":"info@mktaepper.dk","phone":" +45 50 34 50 23","open_default":false,"show_divider":false}}},"block_order":["image_text_gMRUnE","newsletter_3qCrWc","menu_DEKGYP","menu_4eCrBB","menu_6cjHfA","contact_information_wA6FRf"],"custom_css":[],"settings":{"container":"fixed","color_scheme":"scheme-13","enable_follow_on_shop":true,"show_social":true,"social_button_style":"btn--icon","enable_country_selector":true,"enable_language_selector":false,"payment_enable":true,"footer_layout":"standard","footer_bottom_menu":"","show_sperator_line":false,"show_section_divider":true,"divider_width":"fixed","padding_top":40,"padding_bottom":40}},"mobile_sticky_bar_aYhgJK":{"type":"mobile-sticky-bar","blocks":{"home_AP8mmy":{"type":"home","settings":{"text":"Home"}},"cart_gnnwxQ":{"type":"cart","settings":{"text":"Cart"}},"products_eYYkE8":{"type":"products","settings":{"text":"Products","collection":""}},"link_mJ6QMc":{"type":"link","settings":{"text":"About","url":"","icon":"map-pin"}}},"block_order":["home_AP8mmy","cart_gnnwxQ","products_eYYkE8","link_mJ6QMc"],"disabled":true,"settings":{"enable_sticky_bar":true,"show_text":true}}},"order":["footer","mobile_sticky_bar_aYhgJK"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "name": "t:sections.footer.name",
+  "type": "footer",
+  "sections": {
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "image_text_gMRUnE": {
+          "type": "image_text",
+          "settings": {
+            "block_width": 25,
+            "layout": "image_top",
+            "heading": "",
+            "heading_size": "h6",
+            "image": "shopify://shop_images/download-removebg-preview_1.png",
+            "image_width": 150,
+            "image_width_mobile": 100,
+            "overlay_opacity": 70,
+            "text": "<p>Besøg vores showroom og oplev en del af vores store tæppeudvalg, samt få professionel vejledning ift. valg af dit nye tæppe!<br/><br/></p>",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--underline",
+            "color_scheme": "scheme-inverse",
+            "content_alignment": "left",
+            "open_default": false,
+            "show_divider": false
+          }
+        },
+        "newsletter_3qCrWc": {
+          "type": "newsletter",
+          "disabled": true,
+          "settings": {
+            "block_width": 55,
+            "heading": "NYHEDSBREV",
+            "heading_size": "h3",
+            "newsletter_description": "<p>Tilmeld dig vores nyhedsbrev og få besked om nye varer, udsalg samt eksklusive rabatter.</p>",
+            "newsletter_term": "",
+            "newsletter_text_alignment": "left",
+            "form_width": 465,
+            "button_style": "btn--primary",
+            "button_icon": "none",
+            "order_first": true
+          }
+        },
+        "menu_DEKGYP": {
+          "type": "menu",
+          "settings": {
+            "block_width": 15,
+            "heading": "INFO",
+            "heading_size": "h6",
+            "menu": "help-support",
+            "open_default": false,
+            "show_divider": false
+          }
+        },
+        "menu_4eCrBB": {
+          "type": "menu",
+          "settings": {
+            "block_width": 15,
+            "heading": "GUIDES & INSPIRATION",
+            "heading_size": "h6",
+            "menu": "information",
+            "open_default": false,
+            "show_divider": false
+          }
+        },
+        "menu_6cjHfA": {
+          "type": "menu",
+          "settings": {
+            "block_width": 15,
+            "heading": "SHOP",
+            "heading_size": "h6",
+            "menu": "footer",
+            "open_default": false,
+            "show_divider": false
+          }
+        },
+        "contact_information_wA6FRf": {
+          "type": "contact_information",
+          "settings": {
+            "block_width": 25,
+            "heading": "KONTAKTOPLYSNINGER",
+            "heading_size": "h6",
+            "address": "Østre alle 36, 4200 Slagelse, Danmark.",
+            "working_hours": "Mandag-fredag ​​fra kl. 10-14",
+            "email": "info@mktaepper.dk",
+            "phone": " +45 50 34 50 23",
+            "open_default": false,
+            "show_divider": false
+          }
+        }
+      },
+      "block_order": [
+        "image_text_gMRUnE",
+        "newsletter_3qCrWc",
+        "menu_DEKGYP",
+        "menu_4eCrBB",
+        "menu_6cjHfA",
+        "contact_information_wA6FRf"
+      ],
+      "custom_css": [],
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "scheme-13",
+        "enable_follow_on_shop": true,
+        "show_social": true,
+        "social_button_style": "btn--icon",
+        "enable_country_selector": true,
+        "enable_language_selector": false,
+        "payment_enable": true,
+        "footer_layout": "standard",
+        "footer_bottom_menu": "",
+        "show_sperator_line": false,
+        "show_section_divider": true,
+        "divider_width": "fixed",
+        "bottom_bar_color": "black",
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "mobile_sticky_bar_aYhgJK": {
+      "type": "mobile-sticky-bar",
+      "blocks": {
+        "home_AP8mmy": {
+          "type": "home",
+          "settings": {
+            "text": "Home"
+          }
+        },
+        "cart_gnnwxQ": {
+          "type": "cart",
+          "settings": {
+            "text": "Cart"
+          }
+        },
+        "products_eYYkE8": {
+          "type": "products",
+          "settings": {
+            "text": "Products",
+            "collection": ""
+          }
+        },
+        "link_mJ6QMc": {
+          "type": "link",
+          "settings": {
+            "text": "About",
+            "url": "",
+            "icon": "map-pin"
+          }
+        }
+      },
+      "block_order": [
+        "home_AP8mmy",
+        "cart_gnnwxQ",
+        "products_eYYkE8",
+        "link_mJ6QMc"
+      ],
+      "disabled": true,
+      "settings": {
+        "enable_sticky_bar": true,
+        "show_text": true
+      }
+    }
+  },
+  "order": [
+    "footer",
+    "mobile_sticky_bar_aYhgJK"
+  ]
+}
