@@ -10155,6 +10155,17 @@ body.search-template #MainContent,
   align-items: center;
   display: flex;
   /* padding: .5rem; */
-  width: 20px;
+  width: 30px;
   height: 20px;
+}
+
+
+.multicolumn-card__payment.mt-2 .payment-icons .list-payment {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 0;
+  padding: 0;
+  margin: 1rem 0 0;
+  list-style: none;
 }
