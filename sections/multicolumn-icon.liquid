@@ -204,6 +204,11 @@
                     </motion-element>
                   </div>
                   <div class="multicolumn-card__info rich-text rich-text--tight flex-1 flex flex-col items-{{ section.settings.content_alignment | replace: 'left', 'start' | replace: 'right', 'end' }}">
+                    {%- if block.settings.show_payment_icons -%}
+                      <div class="multicolumn-card__payment mb-2">
+                        {% render 'payment-icons' %}
+                      </div>
+                    {%- endif -%}
                     {%- if block.settings.title != blank -%}
                       <h3 class="multicolumn-card__title rich-text__heading font-{{ block.settings.heading_font }} {{ block.settings.heading_size }}">
                         {% render 'highlight-text',
@@ -228,11 +233,6 @@
                           button_label: block.settings.button_label,
                           button_icon: block.settings.button_icon
                         %}
-                      </div>
-                    {%- endif -%}
-                    {%- if block.settings.show_payment_icons -%}
-                      <div class="multicolumn-card__payment mt-2">
-                        {% render 'payment-icons' %}
                       </div>
                     {%- endif -%}
                   </div>
