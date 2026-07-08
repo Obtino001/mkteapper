@@ -133,89 +133,11 @@
         "show_section_divider": false,
         "divider_width": "fixed"
       }
-    },
-    "scrolling_promotion_Fy9Yhn": {
-      "type": "scrolling-promotion",
-      "blocks": {
-        "text_gijz7Q": {
-          "type": "text",
-          "settings": {
-            "text_link": "",
-            "text": "Hurtig levering",
-            "text_size": "h4",
-            "text_opacity": 100,
-            "use_custom_color": false,
-            "custom_color": "#000000"
-          }
-        },
-        "text_3TVCPg": {
-          "type": "text",
-          "settings": {
-            "text_link": "",
-            "text": "30 dages gratis retur",
-            "text_size": "h4",
-            "text_opacity": 100,
-            "use_custom_color": false,
-            "custom_color": "#000000"
-          }
-        },
-        "text_iD6689": {
-          "type": "text",
-          "settings": {
-            "text_link": "",
-            "text": "Sikker betaling",
-            "text_size": "h4",
-            "text_opacity": 100,
-            "use_custom_color": false,
-            "custom_color": "#000000"
-          }
-        },
-        "text_CtJBtL": {
-          "type": "text",
-          "settings": {
-            "text_link": "",
-            "text": "24/7 kundesupport",
-            "text_size": "h4",
-            "text_opacity": 100,
-            "use_custom_color": false,
-            "custom_color": "#000000"
-          }
-        },
-        "text_dGmg9m": {
-          "type": "text",
-          "settings": {
-            "text_link": "",
-            "text": "Bæredygtige materialer",
-            "text_size": "h4",
-            "text_opacity": 100,
-            "use_custom_color": false,
-            "custom_color": "#000000"
-          }
-        }
-      },
-      "block_order": [
-        "text_gijz7Q",
-        "text_3TVCPg",
-        "text_iD6689",
-        "text_CtJBtL",
-        "text_dGmg9m"
-      ],
-      "settings": {
-        "color_scheme": "scheme-3",
-        "direction": "left",
-        "pause_on_hover": true,
-        "speed": 0.2,
-        "h_spacing": 80,
-        "show_section_divider": false,
-        "padding_top": 22,
-        "padding_bottom": 22
-      }
     }
   },
   "order": [
     "breadcrumbs_xYaBHj",
     "main",
-    "form",
-    "scrolling_promotion_Fy9Yhn"
+    "form"
   ]
 }
