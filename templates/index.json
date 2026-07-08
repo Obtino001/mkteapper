@@ -356,6 +356,7 @@
             "text_size": "text-base",
             "button_label": "",
             "button_link": "",
+            "show_payment_icons": false,
             "button_style": "btn--plain",
             "button_icon": "caret-right"
           }
@@ -378,6 +379,7 @@
             "text_size": "text-base",
             "button_label": "",
             "button_link": "",
+            "show_payment_icons": false,
             "button_style": "btn--plain",
             "button_icon": "caret-right"
           }
@@ -400,6 +402,7 @@
             "text_size": "text-base",
             "button_label": "",
             "button_link": "",
+            "show_payment_icons": false,
             "button_style": "btn--plain",
             "button_icon": "caret-right"
           }
@@ -422,6 +425,7 @@
             "text_size": "text-base",
             "button_label": "",
             "button_link": "",
+            "show_payment_icons": false,
             "button_style": "btn--plain",
             "button_icon": "caret-right"
           }
@@ -443,6 +447,7 @@
             "text_size": "text-base",
             "button_label": "",
             "button_link": "",
+            "show_payment_icons": true,
             "button_style": "btn--plain",
             "button_icon": "caret-right"
           }
