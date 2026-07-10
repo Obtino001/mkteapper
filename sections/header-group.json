@@ -14,6 +14,13 @@
     "trust_bar_AHMrnh": {
       "type": "trust-bar",
       "blocks": {
+        "usp_xHxnaN": {
+          "type": "usp",
+          "settings": {
+            "text": "4,5 ⭐ på Trustpilot",
+            "icon": ""
+          }
+        },
         "link_list_MNiW86": {
           "type": "link_list",
           "settings": {
@@ -50,6 +57,7 @@
         }
       },
       "block_order": [
+        "usp_xHxnaN",
         "link_list_MNiW86",
         "usp_iaHXQ3",
         "usp_adcBtp",
