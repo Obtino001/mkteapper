@@ -10169,3 +10169,7 @@ body.search-template #MainContent,
   margin: 1rem 0 0;
   list-style: none;
 }
+
+.collection-tab__button .btn--primary {
+  width: 100%;
+}
