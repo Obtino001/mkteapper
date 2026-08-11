@@ -213,6 +213,11 @@
         "type": "shopify://apps/profitmetrics/blocks/head/019b0272-dcd0-785d-9894-392186bb1e9e",
         "disabled": false,
         "settings": {}
+      },
+      "4619911827133728258": {
+        "type": "shopify://apps/localink/blocks/notfound/019f9606-e3a3-71fa-aa25-e3f2fabf34b2",
+        "disabled": false,
+        "settings": {}
       }
     },
     "color_schemes": {
